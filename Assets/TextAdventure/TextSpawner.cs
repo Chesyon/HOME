@@ -8,6 +8,8 @@ public class TextSpawner : MonoBehaviour
     public List<GameObject> textObjects;
     public GameObject textPrefab;
     public Transform canvas;
+
+    public Color TextColor;
     public void SpawnText(string[] texts)
     {
         ClearExistingText();
@@ -15,7 +17,9 @@ public class TextSpawner : MonoBehaviour
         for (int i = 0; i < texts.Length; i++)
         {
             GameObject textObject = Instantiate(textPrefab, rotatee.position, Quaternion.identity, canvas);
-            textObject.GetComponent<TextMeshProUGUI>().text = texts[i];
+            TextMeshProUGUI text = textObject.GetComponent<TextMeshProUGUI>();
+            text.text = texts[i];
+            text.color = TextColor;
             textObjects.Add(textObject);
             transform.eulerAngles += new Vector3(0, 0, angle);
         } 

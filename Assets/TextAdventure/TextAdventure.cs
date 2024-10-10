@@ -5,9 +5,10 @@ using TMPro;
 public class TextAdventure : MonoBehaviour
 {
     public GameState[] States = new GameState[] {
-        new GameState { ScenarioText = "wow it's state 0!", OptionTexts = new string[] { "Press A to Explode", "Press B to be winner" }, OptionKeys = new KeyCode[] { KeyCode.A, KeyCode.B }, OptionIds = new int[] { 1, 2 }, newBgID = 0},
-        new GameState { ScenarioText = "wow it's state 1!", OptionTexts = new string[] { "Press Enter to go to start" }, OptionKeys = new KeyCode[] { KeyCode.Return }, OptionIds = new int[] {0} },
-        new GameState { ScenarioText = "wow it's state 2!", OptionTexts = new string[] { "Press Enter to go to start" }, OptionKeys = new KeyCode[] { KeyCode.Return }, OptionIds = new int[] {0} }
+        new GameState { ScenarioText = "Start", OptionTexts = new string[] { "Press A to Explode", "Press B to be winner", "Press C to uhhhhhhh" }, OptionKeys = new KeyCode[] { KeyCode.A, KeyCode.B, KeyCode.C }, OptionIds = new int[] { 1, 2, 3 }, newBgID = 2},
+        new GameState { ScenarioText = "You explode! womp!", OptionTexts = new string[] { "Press Enter to go to start" }, OptionKeys = new KeyCode[] { KeyCode.Return }, OptionIds = new int[] {0}, newBgID = 0 },
+        new GameState { ScenarioText = "You are winner! Wow!", OptionTexts = new string[] { "Press Enter to go to start" }, OptionKeys = new KeyCode[] { KeyCode.Return }, OptionIds = new int[] {0}, newBgID = 1 },
+        new GameState { ScenarioText = "uhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh", OptionTexts = new string[] { "Press Enter to go to start" }, OptionKeys = new KeyCode[] { KeyCode.Return }, OptionIds = new int[] {0}, newBgID = 4, textColor = new Color(0,1,0) }
     };
     public AudioClip[] sfxLibrary;
     public AudioClip[] bgmLibrary;
@@ -36,7 +37,9 @@ public class TextAdventure : MonoBehaviour
     void UpdateState(int newId)
     {
         currentState = States[newId];
+        spawner.TextColor = currentState.textColor;
         spawner.SpawnText(currentState.OptionTexts);
+        scenarioTextObject.color = currentState.textColor;
         scenarioTextObject.text = currentState.ScenarioText;
         if (currentState.newBgID != -1) { bgObject.sprite = bgLibrary[currentState.newBgID]; ScaleBackground(bgLibrary[currentState.newBgID]); }
         if (currentState.SfxID != -1) { sfxSource.Stop(); sfxSource.clip = sfxLibrary[currentState.SfxID]; sfxSource.Play(); }
@@ -51,9 +54,9 @@ public class TextAdventure : MonoBehaviour
         // calculate sprite aspect ratio
         float spriteWidth = bgSprite.rect.width;
         float spriteHeight = bgSprite.rect.height;
-        float scale;
 
         // this logic took forever to figure out, the conditionals could absolutely be optimized but if it works it works ¯\_(ツ)_/¯
+        float scale;
         if (screenWidth >= screenHeight)
         {
             if (spriteWidth > spriteHeight)
@@ -91,4 +94,5 @@ public class GameState
     public int newBgID { get; set; } = -1;
     public int BgmID { get; set; } = -1;
     public int SfxID { get; set; } = -1;
+    public Color textColor { get; set; } = new Color(0, 0, 0, 1);
 }

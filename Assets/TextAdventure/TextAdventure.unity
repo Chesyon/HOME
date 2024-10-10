@@ -144,7 +144,11 @@ MonoBehaviour:
   sfxLibrary: []
   bgmLibrary: []
   bgLibrary:
+  - {fileID: 21300000, guid: c27d796d49b88c0438a1f9331e56fc13, type: 3}
   - {fileID: 21300000, guid: 90983714184e03149a6d806394e33e6d, type: 3}
+  - {fileID: 21300000, guid: b9a1def95022099459eb886d8e690adb, type: 3}
+  - {fileID: 21300000, guid: e6bdbe9a9504d824d89d17dc9ffac15a, type: 3}
+  - {fileID: 21300000, guid: 1598f7ecf0676854091f9e548dea1adc, type: 3}
   spawner: {fileID: 757112391}
   scenarioTextObject: {fileID: 250736668}
   sfxSource: {fileID: 441642834}
@@ -579,6 +583,7 @@ MonoBehaviour:
   textPrefab: {fileID: 9088880412376500632, guid: de517e5a74c78a641853458f24ce3339,
     type: 3}
   canvas: {fileID: 1710143486}
+  TextColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1162397369
 GameObject:
   m_ObjectHideFlags: 0
