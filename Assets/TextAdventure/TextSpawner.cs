@@ -7,7 +7,7 @@ public class TextSpawner : MonoBehaviour
     public TextAdventure ta; // This is assigned here so it can be assigned to OptionButtons when generated.
     public RectTransform rotatee;
     public List<GameObject> buttonObjects;
-    public GameObject textPrefab;
+    public GameObject buttonPrefab;
     public Transform canvas;
 
     public Color TextColor;
@@ -17,9 +17,9 @@ public class TextSpawner : MonoBehaviour
         float angle = 360 / texts.Length;
         for (int i = 0; i < texts.Length; i++)
         {
-            GameObject buttonObject = Instantiate(textPrefab, rotatee.position, Quaternion.identity, canvas);
+            GameObject buttonObject = Instantiate(buttonPrefab, rotatee.position, Quaternion.identity, canvas);
             TextMeshProUGUI text = buttonObject.GetComponentInChildren<TextMeshProUGUI>();
-            OptionButton ob = text.gameObject.gameObject.GetComponent<OptionButton>(); // still not really efficient but uhhh womp womp. the alternative would be having GameObject.Find() in OptionButton which i think is less efficient. can't really think of a more optimized way to do this
+            OptionButton ob = buttonObject.GetComponent<OptionButton>(); // still not really efficient but uhhh womp womp. the alternative would be having GameObject.Find() in OptionButton which i think is less efficient. can't really think of a more optimized way to do this
             ob.ta = ta;
             ob.OptionID = OptionIds[i];
             text.text = texts[i];
