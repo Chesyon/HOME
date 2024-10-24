@@ -40,12 +40,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 348773058560923613}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3428e09f28426ca4d9c44eec4d987a51, type: 3}
+  m_Script: {fileID: 11500000, guid: d165148330842e6449655822d0c76daa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: {fileID: 0}
   DialougeText: {fileID: 0}
-  animator: {fileID: 0}
-  raycastingObject: {fileID: 0}
-  raycastingScript: {fileID: 0}
   DialougeBox: {fileID: 0}

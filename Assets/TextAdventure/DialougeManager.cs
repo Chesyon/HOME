@@ -2,27 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class DialougeManager : MonoBehaviour
 {
-    public Text nameText;
-    public Text DialougeText;
+    public TextMeshProUGUI nameText;
+    public TextMeshProUGUI DialougeText;
 
-    public Animator animator;
-
-    public GameObject raycastingObject;
-    public Raycasting raycastingScript;
+    //public Animator animator;
+    
     public GameObject DialougeBox;
     public Queue<string> sentences;
     // Start is called before the first frame update
     void Start()
     {
-        raycastingScript = raycastingObject.GetComponent<Raycasting>();
         sentences = new Queue<string>();
     }
     public void StartDialouge (Dialouge dialouge)
     {
-        animator.SetBool("IsOpen", true);
+        //animator.SetBool("IsOpen", true);
         Debug.Log("Starting conversation with " + dialouge.name);
 
         nameText.text = dialouge.name;
@@ -61,9 +59,7 @@ public class DialougeManager : MonoBehaviour
     }
     void EndDialouge ()
     {
-        animator.SetBool("IsOpen", false);
-        raycastingScript.InDialouge = false;
-        raycastingScript.HitObject = null;
+        //animator.SetBool("IsOpen", false);
     }
 
 }
