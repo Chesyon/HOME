@@ -5,10 +5,10 @@ using TMPro;
 public class TextAdventure : MonoBehaviour
 {
     public GameState[] States = new GameState[] {
-        new GameState { ScenarioText = "Start", OptionTexts = new string[] { "Press A to Explode", "Press B to be winner", "Press C to uhhhhhhh" }, OptionKeys = new KeyCode[] { KeyCode.A, KeyCode.B, KeyCode.C }, OptionIds = new int[] { 1, 2, 3 }, newBgID = 2},
-        new GameState { ScenarioText = "You explode! womp!", OptionTexts = new string[] { "Press Enter to go to start" }, OptionKeys = new KeyCode[] { KeyCode.Return }, OptionIds = new int[] {0}, newBgID = 0 },
-        new GameState { ScenarioText = "You are winner! Wow!", OptionTexts = new string[] { "Press Enter to go to start" }, OptionKeys = new KeyCode[] { KeyCode.Return }, OptionIds = new int[] {0}, newBgID = 1 },
-        new GameState { ScenarioText = "uhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh", OptionTexts = new string[] { "Press Enter to go to start" }, OptionKeys = new KeyCode[] { KeyCode.Return }, OptionIds = new int[] {0}, newBgID = 4, textColor = new Color(0,1,0) }
+        new GameState { ScenarioText = "Start", OptionTexts = new string[] { "Press A to Explode", "Press B to be winner", "Press C to uhhhhhhh" }, OptionIds = new int[] { 1, 2, 3 }, newBgID = 2},
+        new GameState { ScenarioText = "You explode! womp!", OptionTexts = new string[] { "Press Enter to go to start" }, OptionIds = new int[] {0}, newBgID = 0 },
+        new GameState { ScenarioText = "You are winner! Wow!", OptionTexts = new string[] { "Press Enter to go to start" }, OptionIds = new int[] {0}, newBgID = 1 },
+        new GameState { ScenarioText = "uhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh", OptionTexts = new string[] { "Press Enter to go to start" }, OptionIds = new int[] {0}, newBgID = 4, textColor = new Color(0,1,0) }
     };
     public AudioClip[] sfxLibrary;
     public AudioClip[] bgmLibrary;
@@ -26,19 +26,20 @@ public class TextAdventure : MonoBehaviour
         UpdateState(0);
     }
 
-    void Update()
+    void SpecialProcess(int ID) // Special Processes are used for rare scenarios in code that don't need to be included in the class.
     {
-        for (int i = 0; i < currentState.OptionKeys.Length; i++)
+        switch (ID)
         {
-            if (Input.GetKeyDown(currentState.OptionKeys[i])) UpdateState(currentState.OptionIds[i]);
+            default:
+                break;
         }
     }
 
-    void UpdateState(int newId)
+    public void UpdateState(int newId)
     {
         currentState = States[newId];
         spawner.TextColor = currentState.textColor;
-        spawner.SpawnText(currentState.OptionTexts);
+        spawner.SpawnText(currentState.OptionTexts, currentState.OptionIds);
         scenarioTextObject.color = currentState.textColor;
         scenarioTextObject.text = currentState.ScenarioText;
         if (currentState.newBgID != -1) { bgObject.sprite = bgLibrary[currentState.newBgID]; ScaleBackground(bgLibrary[currentState.newBgID]); }
@@ -89,10 +90,10 @@ public class GameState
 {
     public string ScenarioText { get; set;}
     public string[] OptionTexts { get; set; }
-    public KeyCode[] OptionKeys { get; set; }
     public int[] OptionIds { get; set; }
     public int newBgID { get; set; } = -1;
     public int BgmID { get; set; } = -1;
     public int SfxID { get; set; } = -1;
     public Color textColor { get; set; } = new Color(0, 0, 0, 1);
+    public int SpecialProcessID { get; set; } = -1;
 }

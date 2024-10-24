@@ -4,29 +4,33 @@ using TMPro;
 
 public class TextSpawner : MonoBehaviour
 {
+    public TextAdventure ta; // This is assigned here so it can be assigned to OptionButtons when generated.
     public RectTransform rotatee;
-    public List<GameObject> textObjects;
+    public List<GameObject> buttonObjects;
     public GameObject textPrefab;
     public Transform canvas;
 
     public Color TextColor;
-    public void SpawnText(string[] texts)
+    public void SpawnText(string[] texts, int[] OptionIds)
     {
         ClearExistingText();
         float angle = 360 / texts.Length;
         for (int i = 0; i < texts.Length; i++)
         {
-            GameObject textObject = Instantiate(textPrefab, rotatee.position, Quaternion.identity, canvas);
-            TextMeshProUGUI text = textObject.GetComponent<TextMeshProUGUI>();
+            GameObject buttonObject = Instantiate(textPrefab, rotatee.position, Quaternion.identity, canvas);
+            TextMeshProUGUI text = buttonObject.GetComponentInChildren<TextMeshProUGUI>();
+            OptionButton ob = text.gameObject.gameObject.GetComponent<OptionButton>(); // still not really efficient but uhhh womp womp. the alternative would be having GameObject.Find() in OptionButton which i think is less efficient. can't really think of a more optimized way to do this
+            ob.ta = ta;
+            ob.OptionID = OptionIds[i];
             text.text = texts[i];
             text.color = TextColor;
-            textObjects.Add(textObject);
+            buttonObjects.Add(buttonObject);
             transform.eulerAngles += new Vector3(0, 0, angle);
         } 
     }
     public void ClearExistingText()
     {
-        foreach (GameObject go in textObjects) Destroy(go);
-        textObjects = new List<GameObject>();
+        foreach (GameObject go in buttonObjects) Destroy(go);
+        buttonObjects = new List<GameObject>();
     }
 }
