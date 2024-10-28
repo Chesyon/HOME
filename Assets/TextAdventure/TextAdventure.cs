@@ -5,10 +5,10 @@ using TMPro;
 public class TextAdventure : MonoBehaviour
 {
     public GameState[] States = new GameState[] {
-        new GameState { ScenarioText = "Start", OptionTexts = new string[] { "Explode", "be winner", "uhhhhhhh" }, OptionIds = new int[] { 1, 2, 3 }, newBgID = 2},
-        new GameState { ScenarioText = "You explode! womp!", OptionTexts = new string[] { "go to start" }, OptionIds = new int[] {0}, newBgID = 0 },
-        new GameState { ScenarioText = "You are winner! Wow!", OptionTexts = new string[] { "go to start" }, OptionIds = new int[] {0}, newBgID = 1 },
-        new GameState { ScenarioText = "uhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh", OptionTexts = new string[] { "go to start" }, OptionIds = new int[] {0}, newBgID = 4, textColor = new Color(0,1,0) }
+        new GameState { DialogueText = new Dialogue { names = new string[] { "Narrator" }, sentences = new string[] { "Welcome to the start! h" } }, OptionTexts = new string[] { "Explode", "be winner", "uhhhhhhh" }, OptionIds = new int[] { 1, 2, 3 }, newBgID = 2},
+        new GameState { DialogueText = new Dialogue { names = new string[] { "Narrator" }, sentences = new string[] { "You explode! womp!" } }, OptionTexts = new string[] { "go to start" }, OptionIds = new int[] {0}, newBgID = 0 },
+        new GameState { DialogueText = new Dialogue { names = new string[] { "Narrator" }, sentences = new string[] { "You are winner! Wow!" } }, OptionTexts = new string[] { "go to start" }, OptionIds = new int[] {0}, newBgID = 1 },
+        new GameState { DialogueText = new Dialogue { names = new string[] { "Narrator" }, sentences = new string[] { "uhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh" } }, OptionTexts = new string[] { "go to start" }, OptionIds = new int[] {0}, newBgID = 4, textColor = new Color(0,1,0) }
     };
     public AudioClip[] sfxLibrary;
     public AudioClip[] bgmLibrary;
@@ -16,12 +16,14 @@ public class TextAdventure : MonoBehaviour
 
     public GameState currentState;
     public TextSpawner spawner;
-    public TextMeshProUGUI scenarioTextObject;
+    public DialogueManager dialogueManager;
+    public TextMeshProUGUI dialogueText;
+    public TextMeshProUGUI nameText;
     public AudioSource sfxSource;
     public AudioSource bgmSource;
     public Image bgObject;
 
-    void Awake()
+    void Start()
     {
         UpdateState(0);
     }
@@ -38,14 +40,20 @@ public class TextAdventure : MonoBehaviour
     public void UpdateState(int newId)
     {
         currentState = States[newId];
+        spawner.ClearExistingText();
         spawner.TextColor = currentState.textColor;
-        spawner.SpawnText(currentState.OptionTexts, currentState.OptionIds);
-        scenarioTextObject.color = currentState.textColor;
-        scenarioTextObject.text = currentState.ScenarioText;
+        nameText.color = currentState.textColor;
+        dialogueText.color = currentState.textColor;
+        dialogueManager.StartDialogue(currentState.DialogueText);
         SpecialProcess(currentState.SpecialProcessID);
         if (currentState.newBgID != -1) { bgObject.sprite = bgLibrary[currentState.newBgID]; ScaleBackground(bgLibrary[currentState.newBgID]); }
         if (currentState.SfxID != -1) { sfxSource.Stop(); sfxSource.clip = sfxLibrary[currentState.SfxID]; sfxSource.Play(); }
         if (currentState.BgmID != -1) { bgmSource.Stop(); bgmSource.clip = bgmLibrary[currentState.BgmID]; bgmSource.Play(); }
+    }
+
+    public void ShowOptions() // called by DialogueManager when dialogue is done showing.
+    {
+        spawner.SpawnText(currentState.OptionTexts, currentState.OptionIds);
     }
 
     public void ScaleBackground(Sprite bgSprite)
@@ -58,7 +66,7 @@ public class TextAdventure : MonoBehaviour
         float spriteHeight = bgSprite.rect.height;
 
         // this logic took forever to figure out, the conditionals could absolutely be optimized but if it works it works ¯\_(ツ)_/¯
-        float scale;
+        float scale = 0;
         if (screenWidth >= screenHeight)
         {
             if (spriteWidth > spriteHeight)
@@ -70,7 +78,7 @@ public class TextAdventure : MonoBehaviour
                 scale = screenWidth / screenHeight * spriteHeight / spriteWidth;
             }
         }
-        else
+        /*else // currently commented out because screenheight will never be greater than screenwidth with a 16:9 aspect ratio
         {
             if (spriteHeight >= spriteWidth)
             {
@@ -80,7 +88,7 @@ public class TextAdventure : MonoBehaviour
             {
                 scale = screenWidth / screenHeight * spriteHeight / spriteWidth;
             }
-        }
+        }*/
 
         // update object with new scale
         bgObject.transform.localScale = new Vector3(scale, scale, 1);
@@ -90,7 +98,7 @@ public class TextAdventure : MonoBehaviour
 public class GameState
 {
     // TEXT
-    public string ScenarioText { get; set; }
+    public Dialogue DialogueText { get; set; }
     public string[] OptionTexts { get; set; }
     // CHOICE LOGIC
     public int[] OptionIds { get; set; }
