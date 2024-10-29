@@ -4,12 +4,7 @@ using TMPro;
 
 public class TextAdventure : MonoBehaviour
 {
-    public GameState[] States = new GameState[] {
-        new GameState { DialogueText = new Dialogue { names = new string[] { "Narrator" }, sentences = new string[] { "Welcome to the start! h" } }, OptionTexts = new string[] { "Explode", "be winner", "uhhhhhhh" }, OptionIds = new int[] { 1, 2, 3 }, newBgID = 2},
-        new GameState { DialogueText = new Dialogue { names = new string[] { "Narrator" }, sentences = new string[] { "You explode! womp!" } }, OptionTexts = new string[] { "go to start" }, OptionIds = new int[] {0}, newBgID = 0 },
-        new GameState { DialogueText = new Dialogue { names = new string[] { "Narrator" }, sentences = new string[] { "You are winner! Wow!" } }, OptionTexts = new string[] { "go to start" }, OptionIds = new int[] {0}, newBgID = 1 },
-        new GameState { DialogueText = new Dialogue { names = new string[] { "Narrator" }, sentences = new string[] { "uhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh" } }, OptionTexts = new string[] { "go to start" }, OptionIds = new int[] {0}, newBgID = 4, textColor = new Color(0,1,0) }
-    };
+    public GameState[] States;
     public AudioClip[] sfxLibrary;
     public AudioClip[] bgmLibrary;
     public Sprite[] bgLibrary;
@@ -25,6 +20,18 @@ public class TextAdventure : MonoBehaviour
 
     void Start()
     {
+        // sanity checks
+        for (int i = 0; i <= States.Length - 1; i++)
+        {
+            //Debug.Log("running sanity check for state " + i.ToString());
+            if (States[i].DialogueText.sentences.Length != States[i].DialogueText.names.Length) throw new System.FormatException("Length of names and sentences are not equal for state " + i.ToString() + ". Names length: " + States[i].DialogueText.names.Length.ToString() + ". Sentences length: " + States[i].DialogueText.sentences.Length.ToString() + "."); //yes ik there's a better format for this but i never bothered to learn it lmao
+            if (States[i].OptionTexts.Length != States[i].OptionIds.Length) throw new System.FormatException("Length of option texts and IDs are not equal for state " + i.ToString() + ". Texts length: " + States[i].OptionTexts.Length.ToString() + ". IDs length: " + States[i].OptionIds.Length.ToString() + ".");
+            foreach (int ID in States[i].OptionIds)
+            {
+                if (ID < 0 || ID > States.Length - 1) throw new System.IndexOutOfRangeException("State " + i.ToString() + " contains an option leading to ID " + ID.ToString() + ", which does not exist.");
+            }
+        }
+        // start the gaem :)
         UpdateState(0);
     }
 
@@ -93,21 +100,4 @@ public class TextAdventure : MonoBehaviour
         // update object with new scale
         bgObject.transform.localScale = new Vector3(scale, scale, 1);
     }
-}
-
-public class GameState
-{
-    // TEXT
-    public Dialogue DialogueText { get; set; }
-    public string[] OptionTexts { get; set; }
-    // CHOICE LOGIC
-    public int[] OptionIds { get; set; }
-    // SOUND
-    public int newBgID { get; set; } = -1;
-    public int BgmID { get; set; } = -1;
-    public int SfxID { get; set; } = -1;
-    // COLOR
-    public Color textColor { get; set; } = new Color(0, 0, 0, 1);
-    // SP
-    public int SpecialProcessID { get; set; } = -1;
 }
