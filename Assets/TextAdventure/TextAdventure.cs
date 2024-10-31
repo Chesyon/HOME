@@ -10,7 +10,7 @@ public class TextAdventure : MonoBehaviour
     public Sprite[] bgLibrary;
 
     public GameState currentState;
-    public TextSpawner spawner;
+    public OvalButtonSpawner spawner;
     public DialogueManager dialogueManager;
     public TextMeshProUGUI dialogueText;
     public TextMeshProUGUI nameText;
@@ -24,11 +24,11 @@ public class TextAdventure : MonoBehaviour
         for (int i = 0; i <= States.Length - 1; i++)
         {
             //Debug.Log("running sanity check for state " + i.ToString());
-            if (States[i].DialogueText.sentences.Length != States[i].DialogueText.names.Length) throw new System.FormatException("Length of names and sentences are not equal for state " + i.ToString() + ". Names length: " + States[i].DialogueText.names.Length.ToString() + ". Sentences length: " + States[i].DialogueText.sentences.Length.ToString() + "."); //yes ik there's a better format for this but i never bothered to learn it lmao
-            if (States[i].OptionTexts.Length != States[i].OptionIds.Length) throw new System.FormatException("Length of option texts and IDs are not equal for state " + i.ToString() + ". Texts length: " + States[i].OptionTexts.Length.ToString() + ". IDs length: " + States[i].OptionIds.Length.ToString() + ".");
+            if (States[i].DialogueText.sentences.Length != States[i].DialogueText.names.Length) Debug.LogError($"Length of names and sentences are not equal for state { i.ToString() }. Names length: { States[i].DialogueText.names.Length.ToString() }. Sentences length: { States[i].DialogueText.sentences.Length.ToString() }.");
+            if (States[i].OptionTexts.Length != States[i].OptionIds.Length) Debug.LogError($"Length of option texts and IDs are not equal for state { i.ToString() }. Texts length: { States[i].OptionTexts.Length.ToString() }. IDs length: { States[i].OptionIds.Length.ToString() }.");
             foreach (int ID in States[i].OptionIds)
             {
-                if (ID < 0 || ID > States.Length - 1) throw new System.IndexOutOfRangeException("State " + i.ToString() + " contains an option leading to ID " + ID.ToString() + ", which does not exist.");
+                if (ID < 0 || ID > States.Length - 1) Debug.LogError($"State { i.ToString() } contains an option leading to ID { ID.ToString() }, which does not exist.");
             }
         }
         // start the gaem :)
@@ -60,7 +60,7 @@ public class TextAdventure : MonoBehaviour
 
     public void ShowOptions() // called by DialogueManager when dialogue is done showing.
     {
-        spawner.SpawnText(currentState.OptionTexts, currentState.OptionIds);
+        spawner.SpawnButtons(currentState.OptionTexts, currentState.OptionIds);
     }
 
     public void ScaleBackground(Sprite bgSprite)

@@ -1,43 +1,48 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
+using System.Collections.Generic;
+using TMPro;
 
 public class OvalButtonSpawner : MonoBehaviour
 {
-    public Canvas canvas;
-    public GameObject buttonPrefab; // Assign your button prefab in the Inspector
-    public Vector2 center = new Vector2(0, 0); // Center of the oval
-    public float width = 400f; // Width of the oval
-    public float height = 200f; // Height of the oval
-    public Vector2 scale;
-    public int buttonCount = 12; // Number of buttons to create
+    public TextAdventure ta;
+    public GameObject buttonPrefab;
+    float width; // Width of the oval
+    float height; // Height of the oval
+    public const float angleOffset = 90;
 
-    void Start()
+    public Color TextColor;
+    List<GameObject> buttonObjects;
+
+    public Vector2 scale()
     {
-        width = Screen.width * scale.x;
-        height = Screen.height * scale.y;
-        SpawnButtons();
+        RectTransform rect = GetComponent<RectTransform>();
+        return new Vector2(rect.anchorMax.x - rect.anchorMin.x, rect.anchorMax.y - rect.anchorMin.y);
     }
 
-    void SpawnButtons()
+    void Awake()
     {
-        for (int i = 0; i < buttonCount; i++)
+        buttonObjects = new List<GameObject>();
+        width = Screen.width * scale().x;
+        height = Screen.height * scale().y;
+    }
+
+    public void SpawnButtons(string[] texts, int[] OptionIds)
+    {
+        for (int i = 0; i < texts.Length; i++)
         {
-            // Calculate the angle for each button
-            float angle = (360f / buttonCount) * i;
-
-            // Get the position on the oval edge
-            Vector2 position = GetOvalEdgePoint(width, height, angle);
-
-            // Instantiate the button
-            GameObject button = Instantiate(buttonPrefab, transform);
-
-            // Set the button's position
-            RectTransform rectTransform = button.GetComponent<RectTransform>();
+            float angle = (360f / texts.Length) * i + angleOffset; // Calculate the angle for each button
+            Vector2 position = GetOvalEdgePoint(width, height, angle); // Get the position on the oval edge
+            GameObject button = Instantiate(buttonPrefab, transform); // Instantiate the button
+            RectTransform rectTransform = button.GetComponent<RectTransform>(); // Set the button's position
             rectTransform.anchoredPosition = position;
-
-            // Optionally: Set the button text or add any listeners here
-            Text buttonText = button.GetComponentInChildren<Text>();
-            buttonText.text = $"Button {i + 1}";
+            // yoinked right from the old code
+            TextMeshProUGUI text = button.GetComponentInChildren<TextMeshProUGUI>();
+            OptionButton ob = button.GetComponent<OptionButton>(); // still not really efficient but uhhh womp womp. the alternative would be having GameObject.Find() in OptionButton which i think is less efficient. can't really think of a more optimized way to do this
+            ob.ta = ta;
+            ob.OptionID = OptionIds[i];
+            text.text = texts[i];
+            text.color = TextColor;
+            buttonObjects.Add(button);
         }
     }
 
@@ -47,5 +52,11 @@ public class OvalButtonSpawner : MonoBehaviour
         float x = (width / 2) * Mathf.Cos(angleRadians);
         float y = (height / 2) * Mathf.Sin(angleRadians);
         return new Vector2(x, y);
+    }
+
+    public void ClearExistingText()
+    {
+        foreach (GameObject go in buttonObjects) Destroy(go);
+        buttonObjects = new List<GameObject>();
     }
 }
