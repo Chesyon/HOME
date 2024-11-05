@@ -143,6 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   States:
   - {fileID: 1534352567}
+  - {fileID: 1657956911}
   sfxLibrary: []
   bgmLibrary: []
   bgLibrary:
@@ -151,6 +152,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b9a1def95022099459eb886d8e690adb, type: 3}
   - {fileID: 21300000, guid: e6bdbe9a9504d824d89d17dc9ffac15a, type: 3}
   - {fileID: 21300000, guid: 1598f7ecf0676854091f9e548dea1adc, type: 3}
+  faceLibrary:
+  - {fileID: 21300000, guid: ca4eed2ed2bbd5b43bac47a51d8d7a2d, type: 3}
+  - {fileID: 21300000, guid: b68a81d66d855f545bfe9647d360488a, type: 3}
+  - {fileID: 21300000, guid: 9a58e0ecc37ff2c46bb57254f2831476, type: 3}
+  - {fileID: 21300000, guid: 8df3b4e2ff836cd47a42744640608761, type: 3}
   currentState: {fileID: 0}
   spawner: {fileID: 364263956}
   dialogueManager: {fileID: 1068044724}
@@ -159,6 +165,7 @@ MonoBehaviour:
   sfxSource: {fileID: 441642834}
   bgmSource: {fileID: 1162397370}
   bgObject: {fileID: 365513500}
+  face: {fileID: 1770477571}
 --- !u!4 &46614724
 Transform:
   m_ObjectHideFlags: 0
@@ -232,8 +239,9 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e6b9396f433047847bfa71f35c314537, type: 2}
+  m_sharedMaterial: {fileID: 21220177106425194, guid: e6b9396f433047847bfa71f35c314537,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -258,7 +266,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 22.8
+  m_fontSize: 21.6
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -724,8 +732,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueText:
-    names:
-    - Narrator
     sentences:
     - template :)
   OptionTexts:
@@ -795,8 +801,9 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e6b9396f433047847bfa71f35c314537, type: 2}
+  m_sharedMaterial: {fileID: 21220177106425194, guid: e6b9396f433047847bfa71f35c314537,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -931,8 +938,8 @@ RectTransform:
   m_Father: {fileID: 1710143486}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.05, y: 0.05}
-  m_AnchorMax: {x: 0.7, y: 0.4}
+  m_AnchorMin: {x: 0.025, y: 0.05}
+  m_AnchorMax: {x: 0.725, y: 0.4}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -949,8 +956,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ta: {fileID: 46614723}
-  nameText: {fileID: 112193343}
   DialogueText: {fileID: 988627259}
+  NameText: {fileID: 112193343}
   DialogueBox: {fileID: 1068044722}
 --- !u!114 &1068044725
 MonoBehaviour:
@@ -972,8 +979,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 72860ae458797da4884d737f05a56235, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1242,15 +1249,68 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueText:
-    names:
-    - Narrator
     sentences:
-    - You wake up. It's a Thursday. It's dark outside.
+    - '[name:Narrator][face:2]You wake up.[face:3] It''s a Thursday. It''s [face:2]
+      dark outside.'
   OptionTexts:
   - Go back to bed.
   - What time is it?
   - man.
-  OptionIds: 000000000000000000000000
+  OptionIds: 000000000100000000000000
+  newBgID: -1
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &1657956909
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1657956910}
+  - component: {fileID: 1657956911}
+  m_Layer: 0
+  m_Name: 1 - Clock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1657956910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657956909}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1657956911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657956909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:h][face:0]The clock reads 11 AM. That''s... weird.'
+  OptionTexts:
+  - Okay...
+  OptionIds: 00000000
   newBgID: -1
   BgmID: -1
   SfxID: -1
@@ -1624,6 +1684,7 @@ Transform:
   m_Children:
   - {fileID: 514003771}
   - {fileID: 1534352566}
+  - {fileID: 1657956910}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

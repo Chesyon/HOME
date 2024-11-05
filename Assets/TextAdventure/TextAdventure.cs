@@ -8,6 +8,7 @@ public class TextAdventure : MonoBehaviour
     public AudioClip[] sfxLibrary;
     public AudioClip[] bgmLibrary;
     public Sprite[] bgLibrary;
+    public Sprite[] faceLibrary;
 
     public GameState currentState;
     public OvalButtonSpawner spawner;
@@ -17,14 +18,15 @@ public class TextAdventure : MonoBehaviour
     public AudioSource sfxSource;
     public AudioSource bgmSource;
     public Image bgObject;
+    public Image face;
+
+    const char tagSeparator = ':';
 
     void Start()
     {
         // sanity checks
         for (int i = 0; i <= States.Length - 1; i++)
         {
-            //Debug.Log("running sanity check for state " + i.ToString());
-            if (States[i].DialogueText.sentences.Length != States[i].DialogueText.names.Length) Debug.LogError($"Length of names and sentences are not equal for state { i.ToString() }. Names length: { States[i].DialogueText.names.Length.ToString() }. Sentences length: { States[i].DialogueText.sentences.Length.ToString() }.");
             if (States[i].OptionTexts.Length != States[i].OptionIds.Length) Debug.LogError($"Length of option texts and IDs are not equal for state { i.ToString() }. Texts length: { States[i].OptionTexts.Length.ToString() }. IDs length: { States[i].OptionIds.Length.ToString() }.");
             foreach (int ID in States[i].OptionIds)
             {
@@ -50,6 +52,7 @@ public class TextAdventure : MonoBehaviour
         spawner.ClearExistingText();
         spawner.TextColor = currentState.textColor;
         nameText.color = currentState.textColor;
+        dialogueText.text = "";
         dialogueText.color = currentState.textColor;
         dialogueManager.StartDialogue(currentState.DialogueText);
         SpecialProcess(currentState.SpecialProcessID);
@@ -99,5 +102,23 @@ public class TextAdventure : MonoBehaviour
 
         // update object with new scale
         bgObject.transform.localScale = new Vector3(scale, scale, 1);
+    }
+
+    public void ExecuteTextTag(string textTag)
+    {
+        string instruction = textTag.Split(tagSeparator)[0];
+        string parameter = textTag.Split(tagSeparator)[1];
+        switch (instruction)
+        {
+            case "name":
+                dialogueManager.NameText.text = parameter;
+                break;
+            case "face":
+                face.sprite = faceLibrary[int.Parse(parameter)];
+                break;
+            default:
+                Debug.LogError($"Unexpected text tag { instruction }");
+                break;
+        }
     }
 }
