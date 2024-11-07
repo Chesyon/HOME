@@ -21,6 +21,7 @@ public class TextAdventure : MonoBehaviour
     public Image face;
 
     const char tagSeparator = ':';
+    const char paramSeparator = ',';
 
     void Start()
     {
@@ -103,18 +104,40 @@ public class TextAdventure : MonoBehaviour
         // update object with new scale
         bgObject.transform.localScale = new Vector3(scale, scale, 1);
     }
-
+    public void UpdateBackground(int id)
+    {
+        bgObject.sprite = bgLibrary[id];
+        ScaleBackground(bgLibrary[id]);
+    }
+    public void PlaySfx(int id)
+    {
+        sfxSource.Stop();
+        sfxSource.clip = sfxLibrary[id];
+        sfxSource.Play();
+    }
+    public void PlayBgm(int id)
+    {
+        bgmSource.Stop();
+        bgmSource.clip = bgmLibrary[id];
+        bgmSource.Play();
+    }
     public void ExecuteTextTag(string textTag)
     {
         string instruction = textTag.Split(tagSeparator)[0];
-        string parameter = textTag.Split(tagSeparator)[1];
+        string[] parameters = textTag.Split(tagSeparator)[1].Split(paramSeparator);
         switch (instruction)
         {
             case "name":
-                dialogueManager.NameText.text = parameter;
+                dialogueManager.NameText.text = parameters[0];
                 break;
             case "face":
-                face.sprite = faceLibrary[int.Parse(parameter)];
+                face.sprite = faceLibrary[int.Parse(parameters[0])];
+                break;
+            case "bgm":
+                PlayBgm(int.Parse(parameters[0]));
+                break;
+            case "sfx":
+                PlaySfx(int.Parse(parameters[0]));
                 break;
             default:
                 Debug.LogError($"Unexpected text tag { instruction }");

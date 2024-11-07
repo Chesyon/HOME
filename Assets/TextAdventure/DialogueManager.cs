@@ -34,6 +34,10 @@ public class DialogueManager : MonoBehaviour
             {
                 DisplayNextSentence();
             }
+            else if (ta.currentState.OptionIds.Length == 1)
+            {
+                ta.UpdateState(ta.currentState.OptionIds[0]);
+            }
         }
     }
     public void StartDialogue (Dialogue Dialogue)
@@ -51,11 +55,6 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence ()
     {
-        /*if (sentences.Count == 0)
-        {
-            EndDialogue();
-            return;
-        }*/
         sentence = sentences.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeSentence());
@@ -96,7 +95,7 @@ public class DialogueManager : MonoBehaviour
             }
         }
         typing = false;
-        if(sentences.Count == 0) ta.ShowOptions(); // sentence writing is done! show the buttons
+        if (sentences.Count == 0 && ta.currentState.OptionIds.Length > 1) ta.ShowOptions(); // sentence writing is done! show the buttons
     }
     void EndDialogue ()
     {

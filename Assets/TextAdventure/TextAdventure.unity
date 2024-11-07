@@ -143,9 +143,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   States:
   - {fileID: 1534352567}
+  - {fileID: 474719740}
   - {fileID: 1657956911}
-  sfxLibrary: []
-  bgmLibrary: []
+  - {fileID: 1572031759}
+  - {fileID: 375249643}
+  - {fileID: 263497420}
+  sfxLibrary:
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 869712252c079794e996d002f360c76c, type: 3}
+  bgmLibrary:
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 3ebce30dbd984bf44a658159d0877999, type: 3}
   bgLibrary:
   - {fileID: 21300000, guid: c27d796d49b88c0438a1f9331e56fc13, type: 3}
   - {fileID: 21300000, guid: 90983714184e03149a6d806394e33e6d, type: 3}
@@ -212,8 +220,8 @@ RectTransform:
   m_Father: {fileID: 1068044723}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.02, y: 0.85}
-  m_AnchorMax: {x: 0.5, y: 0.98}
+  m_AnchorMin: {x: 0.02, y: 0.78}
+  m_AnchorMax: {x: 0.5, y: 0.92}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -266,7 +274,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 21.6
+  m_fontSize: 20.7
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -341,6 +349,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 112193341}
   m_CullTransparentMesh: 0
+--- !u!1 &263497418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 263497419}
+  - component: {fileID: 263497420}
+  m_Layer: 0
+  m_Name: 5 - Sleep 2 (break)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &263497419
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263497418}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &263497420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263497418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[face:2]You lie down and close your eyes again.'
+    - '[bgm:0]The knocking stops.'
+    - '...'
+    - '[face:0][sfx:1]CRASH!'
+  OptionTexts:
+  - Ignore it.
+  - Stand up.
+  OptionIds: 0100000000000000
+  newBgID: -1
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
 --- !u!1 &364263954
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,6 +533,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365513498}
   m_CullTransparentMesh: 0
+--- !u!1 &375249641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 375249642}
+  - component: {fileID: 375249643}
+  m_Layer: 0
+  m_Name: 4 - Awake 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &375249642
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375249641}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &375249643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375249641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - You look around. It's dark outside. The knocking hasn't stopped.
+  OptionTexts:
+  - Go back to bed.
+  - What time is it?
+  OptionIds: 0300000002000000
+  newBgID: -1
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
 --- !u!1 &414675782
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,6 +809,61 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &474719738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 474719739}
+  - component: {fileID: 474719740}
+  m_Layer: 0
+  m_Name: 1 - Awake 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &474719739
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474719738}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &474719740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474719738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - You look around. It's dark outside.
+  OptionTexts:
+  - Go back to bed.
+  - What time is it?
+  OptionIds: 0300000002000000
+  newBgID: -1
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
 --- !u!1 &514003770
 GameObject:
   m_ObjectHideFlags: 0
@@ -981,7 +1157,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 72860ae458797da4884d737f05a56235, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1250,13 +1426,68 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up.[face:3] It''s a Thursday. It''s [face:2]
-      dark outside.'
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
   OptionTexts:
   - Go back to bed.
-  - What time is it?
-  - man.
-  OptionIds: 000000000100000000000000
+  - Stand up.
+  OptionIds: 0300000001000000
+  newBgID: -1
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &1572031757
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1572031758}
+  - component: {fileID: 1572031759}
+  m_Layer: 0
+  m_Name: 3 - Sleep 1 (knock)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1572031758
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572031757}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1572031759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572031757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[face:2]You go back to sleep.'
+    - An hour later...
+    - '[face:0][bgm:1]There''s knocking at the door.'
+  OptionTexts:
+  - Ignore it.
+  - Stand up.
+  OptionIds: 0500000004000000
   newBgID: -1
   BgmID: -1
   SfxID: -1
@@ -1273,7 +1504,7 @@ GameObject:
   - component: {fileID: 1657956910}
   - component: {fileID: 1657956911}
   m_Layer: 0
-  m_Name: 1 - Clock
+  m_Name: 2 - Clock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1291,7 +1522,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2073660737}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1657956911
 MonoBehaviour:
@@ -1310,7 +1541,7 @@ MonoBehaviour:
     - '[name:h][face:0]The clock reads 11 AM. That''s... weird.'
   OptionTexts:
   - Okay...
-  OptionIds: 00000000
+  OptionIds: 01000000
   newBgID: -1
   BgmID: -1
   SfxID: -1
@@ -1684,7 +1915,11 @@ Transform:
   m_Children:
   - {fileID: 514003771}
   - {fileID: 1534352566}
+  - {fileID: 474719739}
   - {fileID: 1657956910}
+  - {fileID: 1572031758}
+  - {fileID: 375249642}
+  - {fileID: 263497419}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
