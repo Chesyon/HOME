@@ -8,7 +8,7 @@ public class GameState : MonoBehaviour
     // CHOICE LOGIC
     public int[] OptionIds;
     // SOUND
-    public int newBgID = -1;
+    public int BgAnimID = 0;
     public int BgmID = -1;
     public int SfxID = -1;
     // COLOR

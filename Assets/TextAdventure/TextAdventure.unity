@@ -154,12 +154,9 @@ MonoBehaviour:
   bgmLibrary:
   - {fileID: 0}
   - {fileID: 8300000, guid: 3ebce30dbd984bf44a658159d0877999, type: 3}
-  bgLibrary:
-  - {fileID: 21300000, guid: c27d796d49b88c0438a1f9331e56fc13, type: 3}
-  - {fileID: 21300000, guid: 90983714184e03149a6d806394e33e6d, type: 3}
-  - {fileID: 21300000, guid: b9a1def95022099459eb886d8e690adb, type: 3}
-  - {fileID: 21300000, guid: e6bdbe9a9504d824d89d17dc9ffac15a, type: 3}
-  - {fileID: 21300000, guid: 1598f7ecf0676854091f9e548dea1adc, type: 3}
+  frame1Library:
+  - {fileID: 21300000, guid: bc4b03dfd5c68f84f80f22d02bfe4632, type: 3}
+  - {fileID: 21300000, guid: 95cae98a076a75d4c8d5709eee53ce8d, type: 3}
   faceLibrary:
   - {fileID: 21300000, guid: ca4eed2ed2bbd5b43bac47a51d8d7a2d, type: 3}
   - {fileID: 21300000, guid: b68a81d66d855f545bfe9647d360488a, type: 3}
@@ -178,6 +175,7 @@ MonoBehaviour:
   bgmSource: {fileID: 1162397370}
   bgObject: {fileID: 365513500}
   face: {fileID: 1770477571}
+  bgAnimator: {fileID: 365513502}
 --- !u!4 &46614724
 Transform:
   m_ObjectHideFlags: 0
@@ -406,7 +404,7 @@ MonoBehaviour:
   - Ignore it.
   - Stand up.
   OptionIds: 0100000000000000
-  newBgID: -1
+  BgAnimID: -1
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -474,6 +472,7 @@ GameObject:
   - component: {fileID: 365513499}
   - component: {fileID: 365513501}
   - component: {fileID: 365513500}
+  - component: {fileID: 365513502}
   m_Layer: 0
   m_Name: background
   m_TagString: Untagged
@@ -537,6 +536,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365513498}
   m_CullTransparentMesh: 0
+--- !u!95 &365513502
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365513498}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 897809052c57c3e449d5032b3f6c0776, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &375249641
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,7 +605,7 @@ MonoBehaviour:
   - Go back to bed.
   - What time is it?
   OptionIds: 0300000002000000
-  newBgID: -1
+  BgAnimID: -1
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -863,7 +881,7 @@ MonoBehaviour:
   - Go back to bed.
   - What time is it?
   OptionIds: 0300000002000000
-  newBgID: -1
+  BgAnimID: 1
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -917,7 +935,7 @@ MonoBehaviour:
   OptionTexts:
   - test
   OptionIds: 00000000
-  newBgID: -1
+  BgAnimID: -1
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -1339,7 +1357,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -1435,7 +1453,7 @@ MonoBehaviour:
   - Go back to bed.
   - Stand up.
   OptionIds: 0300000001000000
-  newBgID: -1
+  BgAnimID: 0
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -1492,7 +1510,7 @@ MonoBehaviour:
   - Ignore it.
   - Stand up.
   OptionIds: 0500000004000000
-  newBgID: -1
+  BgAnimID: -1
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -1546,7 +1564,7 @@ MonoBehaviour:
   OptionTexts:
   - Okay...
   OptionIds: 01000000
-  newBgID: -1
+  BgAnimID: -1
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -1753,7 +1771,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: b68a81d66d855f545bfe9647d360488a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ca4eed2ed2bbd5b43bac47a51d8d7a2d, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

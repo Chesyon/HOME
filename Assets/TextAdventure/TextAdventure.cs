@@ -7,7 +7,7 @@ public class TextAdventure : MonoBehaviour
     public GameState[] States;
     public AudioClip[] sfxLibrary;
     public AudioClip[] bgmLibrary;
-    public Sprite[] bgLibrary;
+    public Sprite[] frame1Library;
     public Sprite[] faceLibrary;
 
     public GameState currentState;
@@ -19,9 +19,11 @@ public class TextAdventure : MonoBehaviour
     public AudioSource bgmSource;
     public Image bgObject;
     public Image face;
+    public Animator bgAnimator;
 
     const char tagSeparator = ':';
     const char paramSeparator = ',';
+    const string animatorParameter = "bgAnimId";
 
     void Start()
     {
@@ -57,7 +59,8 @@ public class TextAdventure : MonoBehaviour
         dialogueText.color = currentState.textColor;
         dialogueManager.StartDialogue(currentState.DialogueText);
         SpecialProcess(currentState.SpecialProcessID);
-        if (currentState.newBgID != -1) { bgObject.sprite = bgLibrary[currentState.newBgID]; ScaleBackground(bgLibrary[currentState.newBgID]); }
+        bgAnimator.SetInteger(animatorParameter, currentState.BgAnimID);
+        ScaleBackground(frame1Library[currentState.BgAnimID]);
         if (currentState.SfxID != -1) { sfxSource.Stop(); sfxSource.clip = sfxLibrary[currentState.SfxID]; sfxSource.Play(); }
         if (currentState.BgmID != -1) { bgmSource.Stop(); bgmSource.clip = bgmLibrary[currentState.BgmID]; bgmSource.Play(); }
     }
@@ -106,8 +109,8 @@ public class TextAdventure : MonoBehaviour
     }
     public void UpdateBackground(int id)
     {
-        bgObject.sprite = bgLibrary[id];
-        ScaleBackground(bgLibrary[id]);
+        bgAnimator.SetInteger(animatorParameter, id);
+        ScaleBackground(frame1Library[id]);
     }
     public void PlaySfx(int id)
     {
