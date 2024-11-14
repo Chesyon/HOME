@@ -112,6 +112,116 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &11930035
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 11930036}
+  - component: {fileID: 11930037}
+  m_Layer: 0
+  m_Name: 13 - fight 2 kitchen (spare time)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &11930036
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11930035}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11930037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11930035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &43533199
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 43533200}
+  - component: {fileID: 43533201}
+  m_Layer: 0
+  m_Name: 12 - flee
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &43533200
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43533199}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &43533201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43533199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
 --- !u!1 &46614722
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,11 +253,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   States:
   - {fileID: 1534352567}
-  - {fileID: 474719740}
-  - {fileID: 1657956911}
-  - {fileID: 1572031759}
-  - {fileID: 375249643}
-  - {fileID: 263497420}
+  - {fileID: 616217663}
+  - {fileID: 1507053867}
+  - {fileID: 1483199660}
+  - {fileID: 236272741}
+  - {fileID: 1997638984}
+  - {fileID: 1235185534}
+  - {fileID: 805662457}
+  - {fileID: 1364204179}
+  - {fileID: 882083649}
+  - {fileID: 1609043307}
+  - {fileID: 976459199}
+  - {fileID: 43533201}
+  - {fileID: 11930037}
+  - {fileID: 276183022}
+  - {fileID: 680957895}
+  - {fileID: 1693814937}
+  - {fileID: 1764932735}
+  - {fileID: 362538978}
+  - {fileID: 373772016}
+  - {fileID: 1241581404}
+  - {fileID: 1807161909}
+  - {fileID: 1339082257}
+  - {fileID: 136614089}
+  - {fileID: 439321648}
+  - {fileID: 193174611}
+  - {fileID: 1008747566}
+  - {fileID: 1848166133}
+  - {fileID: 58366654}
+  - {fileID: 1281435979}
+  - {fileID: 976357615}
+  - {fileID: 1338920766}
+  - {fileID: 1665976339}
+  - {fileID: 146817188}
+  - {fileID: 344033951}
+  - {fileID: 1127847505}
+  - {fileID: 834009257}
+  - {fileID: 736490067}
+  - {fileID: 748950123}
+  - {fileID: 1244453247}
+  - {fileID: 951704134}
+  - {fileID: 1604772472}
+  - {fileID: 2010452913}
+  - {fileID: 436355748}
+  - {fileID: 1571861997}
+  - {fileID: 157045758}
   sfxLibrary:
   - {fileID: 0}
   - {fileID: 8300000, guid: 869712252c079794e996d002f360c76c, type: 3}
@@ -190,6 +340,61 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &58366652
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 58366653}
+  - component: {fileID: 58366654}
+  m_Layer: 0
+  m_Name: 28 - sleep 1 (knock)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &58366653
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58366652}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &58366654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58366652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
 --- !u!1 &112193341
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,7 +481,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 20.7
+  m_fontSize: 13.15
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -351,7 +556,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 112193341}
   m_CullTransparentMesh: 0
---- !u!1 &263497418
+--- !u!1 &136614087
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -359,36 +564,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 263497419}
-  - component: {fileID: 263497420}
+  - component: {fileID: 136614088}
+  - component: {fileID: 136614089}
   m_Layer: 0
-  m_Name: 5 - Sleep 2 (break)
+  m_Name: 23 - clock 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &263497419
+--- !u!4 &136614088
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 263497418}
+  m_GameObject: {fileID: 136614087}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2073660737}
-  m_RootOrder: 6
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &263497420
+--- !u!114 &136614089
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 263497418}
+  m_GameObject: {fileID: 136614087}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
@@ -396,15 +601,397 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[face:2]You lie down and close your eyes again.'
-    - '[bgm:0]The knocking stops.'
-    - '...'
-    - '[face:0][sfx:1]CRASH!'
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
   OptionTexts:
-  - Ignore it.
+  - Go back to bed.
   - Stand up.
-  OptionIds: 0100000000000000
-  BgAnimID: -1
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &146817186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 146817187}
+  - component: {fileID: 146817188}
+  m_Layer: 0
+  m_Name: 33 - clock 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &146817187
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146817186}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 34
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &146817188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146817186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &157045756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 157045757}
+  - component: {fileID: 157045758}
+  m_Layer: 0
+  m_Name: 45 - open door (win)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &157045757
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157045756}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 46
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &157045758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157045756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &193174609
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 193174610}
+  - component: {fileID: 193174611}
+  m_Layer: 0
+  m_Name: 25 - time wasted (game over)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &193174610
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193174609}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &193174611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193174609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &236272739
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 236272740}
+  - component: {fileID: 236272741}
+  m_Layer: 0
+  m_Name: 4 - back door 2 (win)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &236272740
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236272739}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &236272741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236272739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &276183020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 276183021}
+  - component: {fileID: 276183022}
+  m_Layer: 0
+  m_Name: 14 - fight 2 kitchen (no spare time)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &276183021
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276183020}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &276183022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276183020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &344033949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 344033950}
+  - component: {fileID: 344033951}
+  m_Layer: 0
+  m_Name: 34 - light 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &344033950
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344033949}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 35
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &344033951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344033949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &362538976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 362538977}
+  - component: {fileID: 362538978}
+  m_Layer: 0
+  m_Name: 18 - downstairs 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &362538977
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362538976}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &362538978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362538976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -555,7 +1142,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1 &375249641
+--- !u!1 &373772014
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -563,36 +1150,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 375249642}
-  - component: {fileID: 375249643}
+  - component: {fileID: 373772015}
+  - component: {fileID: 373772016}
   m_Layer: 0
-  m_Name: 4 - Awake 2
+  m_Name: 19 - downstairs 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &375249642
+--- !u!4 &373772015
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 375249641}
+  m_GameObject: {fileID: 373772014}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2073660737}
-  m_RootOrder: 5
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &375249643
+--- !u!114 &373772016
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 375249641}
+  m_GameObject: {fileID: 373772014}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
@@ -600,12 +1187,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - You look around. It's dark outside. The knocking hasn't stopped.
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
   OptionTexts:
   - Go back to bed.
-  - What time is it?
-  OptionIds: 0300000002000000
-  BgAnimID: -1
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -704,6 +1291,116 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &436355746
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 436355747}
+  - component: {fileID: 436355748}
+  m_Layer: 0
+  m_Name: 43 - back door 5 (win)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &436355747
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436355746}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 44
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &436355748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436355746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &439321646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 439321647}
+  - component: {fileID: 439321648}
+  m_Layer: 0
+  m_Name: 24 - light 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &439321647
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439321646}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &439321648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439321646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
 --- !u!1 &441642833
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,61 +1528,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &474719738
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 474719739}
-  - component: {fileID: 474719740}
-  m_Layer: 0
-  m_Name: 1 - Awake 1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &474719739
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 474719738}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2073660737}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &474719740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 474719738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DialogueText:
-    sentences:
-    - You look around. It's dark outside.
-  OptionTexts:
-  - Go back to bed.
-  - What time is it?
-  OptionIds: 0300000002000000
-  BgAnimID: 1
-  BgmID: -1
-  SfxID: -1
-  textColor: {r: 0, g: 0, b: 0, a: 1}
-  SpecialProcessID: -1
 --- !u!1 &514003770
 GameObject:
   m_ObjectHideFlags: 0
@@ -936,6 +1578,556 @@ MonoBehaviour:
   - test
   OptionIds: 00000000
   BgAnimID: -1
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &616217661
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 616217662}
+  - component: {fileID: 616217663}
+  m_Layer: 0
+  m_Name: 1 - door fight (win)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &616217662
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616217661}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &616217663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616217661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &680957893
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 680957894}
+  - component: {fileID: 680957895}
+  m_Layer: 0
+  m_Name: 15 - knife 3 (win)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &680957894
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680957893}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &680957895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680957893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &736490065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 736490066}
+  - component: {fileID: 736490067}
+  m_Layer: 0
+  m_Name: 37 - open door (win)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &736490066
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736490065}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 38
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &736490067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736490065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &748950121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 748950122}
+  - component: {fileID: 748950123}
+  m_Layer: 0
+  m_Name: 38 - look out window
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &748950122
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748950121}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 39
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &748950123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748950121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &805662455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 805662456}
+  - component: {fileID: 805662457}
+  m_Layer: 0
+  m_Name: 7 - window 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &805662456
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805662455}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &805662457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805662455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &834009255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 834009256}
+  - component: {fileID: 834009257}
+  m_Layer: 0
+  m_Name: 36 - door 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &834009256
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834009255}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 37
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &834009257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834009255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &882083647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 882083648}
+  - component: {fileID: 882083649}
+  m_Layer: 0
+  m_Name: 9 - back away (break)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &882083648
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882083647}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &882083649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882083647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &951704132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 951704133}
+  - component: {fileID: 951704134}
+  m_Layer: 0
+  m_Name: 40 - kitchen 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &951704133
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951704132}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 41
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &951704134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951704132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &976357613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 976357614}
+  - component: {fileID: 976357615}
+  m_Layer: 0
+  m_Name: 30 - clock 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &976357614
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976357613}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &976357615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976357613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &976459197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 976459198}
+  - component: {fileID: 976459199}
+  m_Layer: 0
+  m_Name: 11 - chair
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &976459198
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976459197}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &976459199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976459197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -1101,6 +2293,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988627257}
   m_CullTransparentMesh: 0
+--- !u!1 &1008747564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1008747565}
+  - component: {fileID: 1008747566}
+  m_Layer: 0
+  m_Name: 26 - sleep 2 (break)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1008747565
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008747564}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1008747566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008747564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
 --- !u!1 &1068044722
 GameObject:
   m_ObjectHideFlags: 0
@@ -1194,6 +2441,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1068044722}
   m_CullTransparentMesh: 0
+--- !u!1 &1127847503
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1127847504}
+  - component: {fileID: 1127847505}
+  m_Layer: 0
+  m_Name: 35 - downstairs 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1127847504
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127847503}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 36
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1127847505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127847503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
 --- !u!1 &1162397369
 GameObject:
   m_ObjectHideFlags: 0
@@ -1321,6 +2623,391 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1235185532
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1235185533}
+  - component: {fileID: 1235185534}
+  m_Layer: 0
+  m_Name: 6 - door 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1235185533
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235185532}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1235185534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235185532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &1241581402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1241581403}
+  - component: {fileID: 1241581404}
+  m_Layer: 0
+  m_Name: 20 - window 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1241581403
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241581402}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1241581404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241581402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &1244453245
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1244453246}
+  - component: {fileID: 1244453247}
+  m_Layer: 0
+  m_Name: 39 - back door (win)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1244453246
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244453245}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 40
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1244453247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244453245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &1281435977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1281435978}
+  - component: {fileID: 1281435979}
+  m_Layer: 0
+  m_Name: 29 - awake 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1281435978
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281435977}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1281435979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281435977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &1338920764
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1338920765}
+  - component: {fileID: 1338920766}
+  m_Layer: 0
+  m_Name: 31 - light 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1338920765
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338920764}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1338920766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338920764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &1339082255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1339082256}
+  - component: {fileID: 1339082257}
+  m_Layer: 0
+  m_Name: 22 - awake 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1339082256
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339082255}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1339082257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339082255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &1364204177
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1364204178}
+  - component: {fileID: 1364204179}
+  m_Layer: 0
+  m_Name: 8 - open door (game over)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1364204178
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364204177}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1364204179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364204177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
 --- !u!1 &1441559028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1403,6 +3090,116 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1483199658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1483199659}
+  - component: {fileID: 1483199660}
+  m_Layer: 0
+  m_Name: 3 - knife 2 (break)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1483199659
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483199658}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1483199660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483199658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &1507053865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1507053866}
+  - component: {fileID: 1507053867}
+  m_Layer: 0
+  m_Name: 2 - back door 3 (win)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1507053866
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507053865}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1507053867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507053865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
 --- !u!1 &1534352565
 GameObject:
   m_ObjectHideFlags: 0
@@ -1458,7 +3255,7 @@ MonoBehaviour:
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
   SpecialProcessID: -1
---- !u!1 &1572031757
+--- !u!1 &1571861995
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1466,36 +3263,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1572031758}
-  - component: {fileID: 1572031759}
+  - component: {fileID: 1571861996}
+  - component: {fileID: 1571861997}
   m_Layer: 0
-  m_Name: 3 - Sleep 1 (knock)
+  m_Name: 44 - approach door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1572031758
+--- !u!4 &1571861996
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1572031757}
+  m_GameObject: {fileID: 1571861995}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2073660737}
-  m_RootOrder: 4
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1572031759
+--- !u!114 &1571861997
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1572031757}
+  m_GameObject: {fileID: 1571861995}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
@@ -1503,19 +3300,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[face:2]You go back to sleep.'
-    - An hour later...
-    - '[face:0][bgm:1]There''s knocking at the door.'
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
   OptionTexts:
-  - Ignore it.
+  - Go back to bed.
   - Stand up.
-  OptionIds: 0500000004000000
-  BgAnimID: -1
+  OptionIds: 0300000001000000
+  BgAnimID: 0
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
   SpecialProcessID: -1
---- !u!1 &1657956909
+--- !u!1 &1604772470
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1523,36 +3318,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1657956910}
-  - component: {fileID: 1657956911}
+  - component: {fileID: 1604772471}
+  - component: {fileID: 1604772472}
   m_Layer: 0
-  m_Name: 2 - Clock
+  m_Name: 41 - knife
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1657956910
+--- !u!4 &1604772471
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1657956909}
+  m_GameObject: {fileID: 1604772470}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2073660737}
-  m_RootOrder: 3
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1657956911
+--- !u!114 &1604772472
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1657956909}
+  m_GameObject: {fileID: 1604772470}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
@@ -1560,11 +3355,177 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:h][face:0]The clock reads 11 AM. That''s... weird.'
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
   OptionTexts:
-  - Okay...
-  OptionIds: 01000000
-  BgAnimID: -1
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &1609043305
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1609043306}
+  - component: {fileID: 1609043307}
+  m_Layer: 0
+  m_Name: 10 - fight 2 door
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1609043306
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609043305}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1609043307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609043305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &1665976337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1665976338}
+  - component: {fileID: 1665976339}
+  m_Layer: 0
+  m_Name: 32 - awake 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1665976338
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665976337}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1665976339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665976337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &1693814935
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1693814936}
+  - component: {fileID: 1693814937}
+  m_Layer: 0
+  m_Name: 16 - back door 4 spare time (win)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1693814936
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693814935}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1693814937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693814935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -1714,6 +3675,61 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1764932733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1764932734}
+  - component: {fileID: 1764932735}
+  m_Layer: 0
+  m_Name: 17 - back door 4 no spare time (game over)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1764932734
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764932733}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1764932735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764932733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
 --- !u!1 &1770477569
 GameObject:
   m_ObjectHideFlags: 0
@@ -1788,6 +3804,116 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770477569}
   m_CullTransparentMesh: 0
+--- !u!1 &1807161907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1807161908}
+  - component: {fileID: 1807161909}
+  m_Layer: 0
+  m_Name: 21 - break (win)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1807161908
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807161907}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1807161909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807161907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &1848166131
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1848166132}
+  - component: {fileID: 1848166133}
+  m_Layer: 0
+  m_Name: 27 - sleep 3 (game over)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1848166132
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848166131}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1848166133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848166131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
 --- !u!1 &1940530592
 GameObject:
   m_ObjectHideFlags: 0
@@ -1908,6 +4034,116 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1940530592}
   m_CullTransparentMesh: 0
+--- !u!1 &1997638982
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1997638983}
+  - component: {fileID: 1997638984}
+  m_Layer: 0
+  m_Name: 5 - kitchen 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1997638983
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997638982}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1997638984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997638982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
+--- !u!1 &2010452911
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2010452912}
+  - component: {fileID: 2010452913}
+  m_Layer: 0
+  m_Name: 42 - knocking
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2010452912
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010452911}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073660737}
+  m_RootOrder: 43
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2010452913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010452911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6885a97f781243144b2cc30f47509d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText:
+    sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+  OptionTexts:
+  - Go back to bed.
+  - Stand up.
+  OptionIds: 0300000001000000
+  BgAnimID: 0
+  BgmID: -1
+  SfxID: -1
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  SpecialProcessID: -1
 --- !u!1 &2073660736
 GameObject:
   m_ObjectHideFlags: 0
@@ -1937,11 +4173,51 @@ Transform:
   m_Children:
   - {fileID: 514003771}
   - {fileID: 1534352566}
-  - {fileID: 474719739}
-  - {fileID: 1657956910}
-  - {fileID: 1572031758}
-  - {fileID: 375249642}
-  - {fileID: 263497419}
+  - {fileID: 616217662}
+  - {fileID: 1507053866}
+  - {fileID: 1483199659}
+  - {fileID: 236272740}
+  - {fileID: 1997638983}
+  - {fileID: 1235185533}
+  - {fileID: 805662456}
+  - {fileID: 1364204178}
+  - {fileID: 882083648}
+  - {fileID: 1609043306}
+  - {fileID: 976459198}
+  - {fileID: 43533200}
+  - {fileID: 11930036}
+  - {fileID: 276183021}
+  - {fileID: 680957894}
+  - {fileID: 1693814936}
+  - {fileID: 1764932734}
+  - {fileID: 362538977}
+  - {fileID: 373772015}
+  - {fileID: 1241581403}
+  - {fileID: 1807161908}
+  - {fileID: 1339082256}
+  - {fileID: 136614088}
+  - {fileID: 439321647}
+  - {fileID: 193174610}
+  - {fileID: 1008747565}
+  - {fileID: 1848166132}
+  - {fileID: 58366653}
+  - {fileID: 1281435978}
+  - {fileID: 976357614}
+  - {fileID: 1338920765}
+  - {fileID: 1665976338}
+  - {fileID: 146817187}
+  - {fileID: 344033950}
+  - {fileID: 1127847504}
+  - {fileID: 834009256}
+  - {fileID: 736490066}
+  - {fileID: 748950122}
+  - {fileID: 1244453246}
+  - {fileID: 951704133}
+  - {fileID: 1604772471}
+  - {fileID: 2010452912}
+  - {fileID: 436355747}
+  - {fileID: 1571861996}
+  - {fileID: 157045757}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
