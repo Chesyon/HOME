@@ -481,7 +481,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 13.15
+  m_fontSize: 21.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1628,9 +1628,9 @@ MonoBehaviour:
   DialogueText:
     sentences:
     - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - '[menu:1]'
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
+  - h
   OptionIds: 0300000001000000
   BgAnimID: 0
   BgmID: -1
@@ -3135,11 +3135,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - knife 2 (break)
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
-  OptionIds: 0300000001000000
+  - fight
+  - get out
+  OptionIds: 0100000002000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1

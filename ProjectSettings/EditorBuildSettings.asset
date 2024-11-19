@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/TextAdventure/Menu.unity
+    guid: daac5d0862998954aa05170e1f54e2fd
+  - enabled: 1
+    path: Assets/TextAdventure/TextAdventure.unity
+    guid: aedb6c0bee57cdc469f5a09dbeeb471c
   m_configObjects: {}
