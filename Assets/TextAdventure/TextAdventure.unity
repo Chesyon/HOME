@@ -481,7 +481,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 21.4
+  m_fontSize: 20.7
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1631,7 +1631,7 @@ MonoBehaviour:
     - '[menu:1]'
   OptionTexts:
   - h
-  OptionIds: 0300000001000000
+  OptionIds: 00000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -3192,9 +3192,8 @@ MonoBehaviour:
     sentences:
     - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
-  OptionIds: 0300000001000000
+  - h
+  OptionIds: 00000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1

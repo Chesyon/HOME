@@ -22,17 +22,31 @@ public class EndingTracker : MonoBehaviour
             i++;
         }
     }
-    // there are a million ways i could have saved a bool[] to PlayerPrefs. this isn't super good in terms of readability, but it converts the bool[] to a binary number, with each bit representing one ending. the main benefit of this is that it's super good for file sizes, only taking up 14 bits.
-    void SaveEndings()
+    /* there are a million ways i could have saved a bool[] to PlayerPrefs.
+       this isn't super good in terms of readability, but it converts the bool[] to a binary number, with each bit representing one ending.
+       the main benefit of this is that it's super good for file sizes, only taking up 14 bits.*/
+    public void SaveEndings()
     {
         int i = 1;
         int endingPrefs = 0;
         foreach (bool ending in endings)
         {
             if (ending) endingPrefs += i;
-            i *= 2;
+            i = i << 1; // 0b1 becomes 0b10, 0b10 becomes 0b100, etc. preparing for next digit
         }
         PlayerPrefs.SetInt("endings", endingPrefs);
+    }
+
+    public void AddNewEnding(int endingNum)
+    {
+        endings[endingNum] = true;
+        SaveEndings();
+    }
+
+    public void ResetEndings()
+    {
+        for (int i = 0; i < endings.Length; i++) endings[i] = false;
+        SaveEndings();
     }
 
     // TESTING
