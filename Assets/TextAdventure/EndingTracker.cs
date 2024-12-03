@@ -7,7 +7,17 @@ public class EndingTracker : MonoBehaviour
     public bool[] endings;
     void Awake()
     {
+        // i stole this from reflections lol
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("EndingTracker");
+
+        if (objs.Length > 1)
+        {
+            Destroy(gameObject);
+        }
+
         DontDestroyOnLoad(gameObject);
+
+        // initial endings load
         LoadEndings();
     }
     
