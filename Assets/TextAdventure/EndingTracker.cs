@@ -29,7 +29,7 @@ public class EndingTracker : MonoBehaviour
         for (int i = 0; i < binary.Length; i++)
         {
             endings[i] = binary[i] == '1';
-            i++;
+            i++; // i'm gonna be real i don't remember why this is here lmao. isn't i already incremented by the for loop?? try removing this if stuff breaks
         }
     }
     /* there are a million ways i could have saved a bool[] to PlayerPrefs.

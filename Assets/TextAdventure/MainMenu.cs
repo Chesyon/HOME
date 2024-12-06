@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
     public GameObject HomeMenu;
     public GameObject SettingsMenu;
     public GameObject EndingTrackerMenu;
+    public GameObject ClearProgressConfirmMenu;
     // ending tracker stuff
     public GameObject endingMenuContent;
     EndingTracker et;
@@ -61,17 +62,20 @@ public class MainMenu : MonoBehaviour
     }
     public void EndingTrackerButton()
     {
+        ClearProgressConfirmMenu.SetActive(false);
         HomeMenu.SetActive(false);
         EndingTrackerMenu.SetActive(true);
     }
     public void ClearEndingsConfirmation()
     {
-        // TODO: open menu to confirm clearing endings.
+        EndingTrackerMenu.SetActive(false);
+        ClearProgressConfirmMenu.SetActive(true);
     }
     public void ClearEndings()
     {
         et.endings = new bool[et.endings.Length];
         et.SaveEndings();
+        Application.Quit();
     }
 
     // stole all of this volume stuff from reflections.
