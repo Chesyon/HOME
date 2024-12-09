@@ -481,7 +481,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 22.85
+  m_fontSize: 19.6
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -677,7 +677,7 @@ GameObject:
   - component: {fileID: 157045757}
   - component: {fileID: 157045758}
   m_Layer: 0
-  m_Name: 45 - open door (win)
+  m_Name: 45 - open door 2 (win)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1629,7 +1629,7 @@ MonoBehaviour:
   DialogueText:
     sentences:
     - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
-    - '[menu:1]'
+    - '[menu:'
   OptionTexts:
   - h
   OptionIds: 00000000
@@ -1704,7 +1704,7 @@ GameObject:
   - component: {fileID: 736490066}
   - component: {fileID: 736490067}
   m_Layer: 0
-  m_Name: 37 - open door (win)
+  m_Name: 37 - open door 1 (win)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2966,7 +2966,7 @@ GameObject:
   - component: {fileID: 1364204178}
   - component: {fileID: 1364204179}
   m_Layer: 0
-  m_Name: 8 - open door (game over)
+  m_Name: 8 - open door 3 (game over)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3192,6 +3192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
+    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
     - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
   OptionTexts:
   - h
@@ -4082,9 +4083,9 @@ MonoBehaviour:
     sentences:
     - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
-  OptionIds: 0300000001000000
+  - back door
+  - door fight
+  OptionIds: 0400000001000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1

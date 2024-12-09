@@ -1,0 +1,19 @@
+LOSE:
+0. Sleep 3 (game over) - Hunted I: Early bird gets the worm.
+1. Time Wasted (game over) - Hunted II: Probably not a good time to look around.
+2. Back Door 4 No Spare Time (game over) - Hunted III: If only you had a little more time...
+3. Open Door 3 (game over) - Hunted IV: Not the best idea to let them into the house.
+
+KILL:
+4. Open Door 2 (win) - Hunter I: You really didn't hesitate, did you?
+5. Door Fight (win) - Hunter II: Take the fight to them.
+6. Knife 3 (win) - Hunter III: Just in time.
+
+ESCAPE:
+7. Open Door 1 (win) - Escapist I: Everything's just fine.
+8. Back Door (win) - Escapist II: Did you even know they were there?
+9. Back Door 2 (win) - Escapist III: Stranger danger.
+10. Back Door 3 (win) - Escapist IV: Time to go!
+11. Back Door 4 Spare Time (win) - Escapist V: Too close... Why didn't they follow you?
+12. Back door 5 (win) - Escapist VI: Playing it safe.
+13. Window break (win) - Escapist VII: Fastest way out... hope it was worth it.

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class TextAdventure : MonoBehaviour
@@ -141,6 +142,10 @@ public class TextAdventure : MonoBehaviour
                 break;
             case "sfx":
                 PlaySfx(int.Parse(parameters[0]));
+                break;
+            case "menu":
+                GameObject.Find("EndingTracker").GetComponent<EndingTracker>().AddNewEnding(int.Parse(parameters[0]));
+                SceneManager.LoadScene(0);
                 break;
             default:
                 Debug.LogError($"Unexpected text tag { instruction }");
