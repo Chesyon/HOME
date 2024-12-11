@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System;
 using UnityEngine.UI;
-
+using UnityEditor;
 public class EndingTracker : MonoBehaviour
 {
     public bool[] endings;
@@ -18,10 +18,11 @@ public class EndingTracker : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         // initial endings load
+        endings = new bool[endings.Length]; // clear out array (from anything left in editor)
         LoadEndings();
     }
     
-    void LoadEndings()
+    public void LoadEndings()
     {
         int endingPrefs = PlayerPrefs.GetInt("endings"); // load the number from PlayerPrefs
         char[] binary = Convert.ToString(endingPrefs, 2).ToCharArray(); // convert it back into a binary number (reminder that each bit represents an ending)
@@ -29,7 +30,7 @@ public class EndingTracker : MonoBehaviour
         for (int i = 0; i < binary.Length; i++)
         {
             endings[i] = binary[i] == '1';
-            i++; // i'm gonna be real i don't remember why this is here lmao. isn't i already incremented by the for loop?? try removing this if stuff breaks
+            //i++; i put this in at some point but don't remember why, so i removed it. try adding it back in if stuff breaks?
         }
     }
     /* there are a million ways i could have saved a bool[] to PlayerPrefs.
@@ -76,5 +77,16 @@ public class EndingTracker : MonoBehaviour
             endings[i] = toggles[i].isOn;
         }
         SaveEndings();
+    }
+}
+
+[CustomEditor(typeof(EndingTracker))]
+class EndingTrackerEditor : Editor
+{
+    public override void OnInspectorGUI()
+    {
+        base.OnInspectorGUI();
+        if (GUILayout.Button("Force save")) GameObject.Find("EndingTracker").GetComponent<EndingTracker>().SaveEndings();
+        if (GUILayout.Button("Force load")) GameObject.Find("EndingTracker").GetComponent<EndingTracker>().LoadEndings();
     }
 }

@@ -383,7 +383,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 32.05
+  m_fontSize: 20.25
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -550,8 +550,8 @@ MonoBehaviour:
   endingNameObject: {fileID: 566498906}
   endingDescriptionObject: {fileID: 735514457}
   endingPictureObject: {fileID: 76365045}
-  endingName: ending name
-  endingDescription: Ending descripotionjiregjoer
+  endingName: Hunted III
+  endingDescription: If only you had a little more time...
   endingPicture: {fileID: 21300000, guid: b9a1def95022099459eb886d8e690adb, type: 3}
 --- !u!1 &78261906
 GameObject:
@@ -1199,8 +1199,8 @@ MonoBehaviour:
   endingNameObject: {fileID: 319972556}
   endingDescriptionObject: {fileID: 1802585254}
   endingPictureObject: {fileID: 119440597}
-  endingName: ending name
-  endingDescription: Ending descripotionjiregjoer
+  endingName: Escapist II
+  endingDescription: Did you even know they were there?
   endingPicture: {fileID: 21300000, guid: b9a1def95022099459eb886d8e690adb, type: 3}
 --- !u!1 &127901784
 GameObject:
@@ -2557,8 +2557,8 @@ MonoBehaviour:
   endingNameObject: {fileID: 1180490493}
   endingDescriptionObject: {fileID: 2050556825}
   endingPictureObject: {fileID: 425319466}
-  endingName: ending name
-  endingDescription: Ending descripotionjiregjoer
+  endingName: Hunter III
+  endingDescription: Just in time.
   endingPicture: {fileID: 21300000, guid: b9a1def95022099459eb886d8e690adb, type: 3}
 --- !u!1 &436978834
 GameObject:
@@ -3389,8 +3389,8 @@ MonoBehaviour:
   endingNameObject: {fileID: 280714139}
   endingDescriptionObject: {fileID: 1722297168}
   endingPictureObject: {fileID: 592753624}
-  endingName: ending name
-  endingDescription: Ending descripotionjiregjoer
+  endingName: Hunted IV
+  endingDescription: Not the best idea to let them into the house.
   endingPicture: {fileID: 21300000, guid: b9a1def95022099459eb886d8e690adb, type: 3}
 --- !u!1 &609304720
 GameObject:
@@ -3967,8 +3967,8 @@ MonoBehaviour:
   endingNameObject: {fileID: 496674942}
   endingDescriptionObject: {fileID: 78261908}
   endingPictureObject: {fileID: 729387467}
-  endingName: ending name
-  endingDescription: Ending descripotionjiregjoer
+  endingName: Escapist VII
+  endingDescription: Fastest way out... hope it was worth it.
   endingPicture: {fileID: 21300000, guid: b9a1def95022099459eb886d8e690adb, type: 3}
 --- !u!1 &735514455
 GameObject:
@@ -4223,8 +4223,8 @@ MonoBehaviour:
   endingNameObject: {fileID: 181205321}
   endingDescriptionObject: {fileID: 2023202957}
   endingPictureObject: {fileID: 765515767}
-  endingName: ending name
-  endingDescription: Ending descripotionjiregjoer
+  endingName: Hunter I
+  endingDescription: You really didn't hesitate, did you?
   endingPicture: {fileID: 21300000, guid: b9a1def95022099459eb886d8e690adb, type: 3}
 --- !u!1 &769095869
 GameObject:
@@ -4447,8 +4447,8 @@ MonoBehaviour:
   endingNameObject: {fileID: 2089410152}
   endingDescriptionObject: {fileID: 1581913450}
   endingPictureObject: {fileID: 786078879}
-  endingName: ending name
-  endingDescription: Ending descripotionjiregjoer
+  endingName: Escapist V
+  endingDescription: Too close... Why didn't they follow you?
   endingPicture: {fileID: 21300000, guid: b9a1def95022099459eb886d8e690adb, type: 3}
 --- !u!1 &864372598
 GameObject:
@@ -5263,8 +5263,8 @@ MonoBehaviour:
   endingNameObject: {fileID: 2083631247}
   endingDescriptionObject: {fileID: 1917527599}
   endingPictureObject: {fileID: 953639292}
-  endingName: ending name
-  endingDescription: Ending descripotionjiregjoer
+  endingName: Escapist VI
+  endingDescription: Playing it safe.
   endingPicture: {fileID: 21300000, guid: b9a1def95022099459eb886d8e690adb, type: 3}
 --- !u!1 &998235852
 GameObject:
@@ -5358,8 +5358,8 @@ MonoBehaviour:
   endingNameObject: {fileID: 131448675}
   endingDescriptionObject: {fileID: 1690859662}
   endingPictureObject: {fileID: 998235854}
-  endingName: ending name
-  endingDescription: Ending descripotionjiregjoer
+  endingName: Hunted II
+  endingDescription: Probably not a good time to look around.
   endingPicture: {fileID: 21300000, guid: b9a1def95022099459eb886d8e690adb, type: 3}
 --- !u!1 &1015402819
 GameObject:
@@ -5843,7 +5843,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 32.05
+  m_fontSize: 20.25
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6471,8 +6471,8 @@ MonoBehaviour:
   endingNameObject: {fileID: 1479630552}
   endingDescriptionObject: {fileID: 864372600}
   endingPictureObject: {fileID: 1214534168}
-  endingName: ending name
-  endingDescription: Ending descripotionjiregjoer
+  endingName: Hunted I
+  endingDescription: Early bird gets the worm.
   endingPicture: {fileID: 21300000, guid: b9a1def95022099459eb886d8e690adb, type: 3}
 --- !u!1 &1267954848
 GameObject:
@@ -6628,7 +6628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b9048cf3364b245ad62643f58cf51a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endings: 0000000000000000000000000000
+  endings: 0100000000000001000000000001
   toggles:
   - {fileID: 0}
   - {fileID: 0}
@@ -7038,8 +7038,8 @@ MonoBehaviour:
   endingNameObject: {fileID: 1893115919}
   endingDescriptionObject: {fileID: 952856168}
   endingPictureObject: {fileID: 1358771359}
-  endingName: ending name
-  endingDescription: Ending descripotionjiregjoer
+  endingName: Escapist I
+  endingDescription: Everything's just fine.
   endingPicture: {fileID: 21300000, guid: b9a1def95022099459eb886d8e690adb, type: 3}
 --- !u!1 &1401933344
 GameObject:
@@ -7133,8 +7133,8 @@ MonoBehaviour:
   endingNameObject: {fileID: 636565107}
   endingDescriptionObject: {fileID: 1449959691}
   endingPictureObject: {fileID: 1401933346}
-  endingName: ending name
-  endingDescription: Ending descripotionjiregjoer
+  endingName: Escapist IV
+  endingDescription: Time to go!
   endingPicture: {fileID: 21300000, guid: b9a1def95022099459eb886d8e690adb, type: 3}
 --- !u!1 &1417454120
 GameObject:
@@ -7224,7 +7224,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 32.05
+  m_fontSize: 20.25
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7681,8 +7681,8 @@ MonoBehaviour:
   endingNameObject: {fileID: 714257877}
   endingDescriptionObject: {fileID: 609304722}
   endingPictureObject: {fileID: 1452177106}
-  endingName: ending name
-  endingDescription: Ending descripotionjiregjoer
+  endingName: Hunter II
+  endingDescription: Take the fight to them.
   endingPicture: {fileID: 21300000, guid: b9a1def95022099459eb886d8e690adb, type: 3}
 --- !u!1 &1479630550
 GameObject:
@@ -8060,7 +8060,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 80.1
+  m_fontSize: 50.6
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -8766,8 +8766,8 @@ MonoBehaviour:
   endingNameObject: {fileID: 80523373}
   endingDescriptionObject: {fileID: 186361099}
   endingPictureObject: {fileID: 1605926410}
-  endingName: ending name
-  endingDescription: Ending descripotionjiregjoer
+  endingName: Escapist III
+  endingDescription: Stranger danger.
   endingPicture: {fileID: 21300000, guid: b9a1def95022099459eb886d8e690adb, type: 3}
 --- !u!1 &1631338929
 GameObject:
@@ -10563,7 +10563,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 32.05
+  m_fontSize: 20.25
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
