@@ -481,7 +481,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 19.6
+  m_fontSize: 21.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -711,10 +711,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - '[menu:4]'
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
+  - h
   OptionIds: 0300000001000000
   BgAnimID: 0
   BgmID: -1
@@ -766,10 +765,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - '[menu:1]'
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
+  - h
   OptionIds: 0300000001000000
   BgAnimID: 0
   BgmID: -1
@@ -821,10 +819,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - '[menu:9]'
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
+  - h
   OptionIds: 0300000001000000
   BgAnimID: 0
   BgmID: -1
@@ -1336,10 +1333,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - '[menu:12]'
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
+  - h
   OptionIds: 0300000001000000
   BgAnimID: 0
   BgmID: -1
@@ -1628,8 +1624,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
-    - '[menu:'
+    - '[menu:5]'
   OptionTexts:
   - h
   OptionIds: 00000000
@@ -1683,10 +1678,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - '[menu:6]'
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
+  - h
   OptionIds: 0300000001000000
   BgAnimID: 0
   BgmID: -1
@@ -1738,10 +1732,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - '[menu:7]'
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
+  - h
   OptionIds: 0300000001000000
   BgAnimID: 0
   BgmID: -1
@@ -2780,10 +2773,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - '[menu:8]'
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
+  - h
   OptionIds: 0300000001000000
   BgAnimID: 0
   BgmID: -1
@@ -3000,10 +2992,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - '[menu:3]'
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
+  - h
   OptionIds: 0300000001000000
   BgAnimID: 0
   BgmID: -1
@@ -3192,8 +3183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - '[menu:10]'
   OptionTexts:
   - h
   OptionIds: 00000000
@@ -3522,10 +3512,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - '[menu:11]'
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
+  - h
   OptionIds: 0300000001000000
   BgAnimID: 0
   BgmID: -1
@@ -3722,10 +3711,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - '[menu:2]'
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
+  - h
   OptionIds: 0300000001000000
   BgAnimID: 0
   BgmID: -1
@@ -3817,7 +3805,7 @@ GameObject:
   - component: {fileID: 1807161908}
   - component: {fileID: 1807161909}
   m_Layer: 0
-  m_Name: 21 - break (win)
+  m_Name: 21 - Window break (win)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3851,10 +3839,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - '[menu:13]'
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
+  - h
   OptionIds: 0300000001000000
   BgAnimID: 0
   BgmID: -1
@@ -3906,10 +3893,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - '[menu:0]'
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
+  - h
   OptionIds: 0300000001000000
   BgAnimID: 0
   BgmID: -1
