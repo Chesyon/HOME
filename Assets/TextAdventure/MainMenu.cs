@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour
     public GameObject SettingsMenu;
     public GameObject EndingTrackerMenu;
     public GameObject ClearProgressConfirmMenu;
+    public GameObject CreditsMenu;
     // ending tracker stuff
     public GameObject endingMenuContent;
     EndingTracker et;
@@ -52,7 +53,13 @@ public class MainMenu : MonoBehaviour
     public void SettingsButton()
     {
         HomeMenu.SetActive(false);
+        CreditsMenu.SetActive(false);
         SettingsMenu.SetActive(true);
+    }
+    public void CreditsButton()
+    {
+        SettingsMenu.SetActive(false);
+        CreditsMenu.SetActive(true);
     }
     public void MainMenuButton()
     {
