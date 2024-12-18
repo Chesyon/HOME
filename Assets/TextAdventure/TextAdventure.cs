@@ -26,6 +26,9 @@ public class TextAdventure : MonoBehaviour
     const char paramSeparator = ',';
     const string animatorParameter = "bgAnimId";
 
+    // for debug mode
+    public DebugMode debug;
+
     void Start()
     {
         // sanity checks
@@ -37,6 +40,8 @@ public class TextAdventure : MonoBehaviour
                 if (ID < 0 || ID > States.Length - 1) Debug.LogError($"State { i.ToString() } contains an option leading to ID { ID.ToString() }, which does not exist.");
             }
         }
+        // setup debugmode
+        debug = GameObject.FindGameObjectWithTag("Debug").GetComponent<DebugMode>();
         // start the gaem :)
         UpdateState(0);
     }
@@ -56,6 +61,7 @@ public class TextAdventure : MonoBehaviour
         spawner.ClearExistingText();
         spawner.TextColor = currentState.textColor;
         nameText.color = currentState.textColor;
+        debug.UpdateGameStateIndicator(newId.ToString());
         dialogueText.text = "";
         dialogueText.color = currentState.textColor;
         dialogueManager.StartDialogue(currentState.DialogueText);

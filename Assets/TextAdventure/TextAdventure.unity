@@ -157,11 +157,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - fight 2 kitchen (spare time) text
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
-  OptionIds: 0300000001000000
+  - Run for the door!
+  - Grab the knife!
+  OptionIds: 100000000f000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -212,11 +212,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - flee text
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
-  OptionIds: 0300000001000000
+  - fight 2 kitchen (no spare time)
+  OptionIds: 0e000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -326,6 +325,7 @@ MonoBehaviour:
   bgObject: {fileID: 365513500}
   face: {fileID: 1770477571}
   bgAnimator: {fileID: 365513502}
+  debug: {fileID: 0}
 --- !u!4 &46614724
 Transform:
   m_ObjectHideFlags: 0
@@ -385,11 +385,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - sleep 1 text
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
-  OptionIds: 0300000001000000
+  - Ignore it.
+  - Get up
+  OptionIds: 1a0000001d000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -481,7 +481,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 21.35
+  m_fontSize: 44.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -601,11 +601,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - clock 3 text
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
-  OptionIds: 0300000001000000
+  - time wasted
+  OptionIds: 19000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -714,7 +713,7 @@ MonoBehaviour:
     - '[menu:4]'
   OptionTexts:
   - h
-  OptionIds: 0300000001000000
+  OptionIds: 00000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -765,10 +764,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
+    - time wasted text
     - '[menu:1]'
   OptionTexts:
   - h
-  OptionIds: 0300000001000000
+  OptionIds: 00000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -819,10 +819,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
+    - back door 2 text
     - '[menu:9]'
   OptionTexts:
   - h
-  OptionIds: 0300000001000000
+  OptionIds: 00000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -873,11 +874,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - should be same as text in 13
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
-  OptionIds: 0300000001000000
+  - Run for the door!
+  - Grab the knife!
+  OptionIds: 110000000f000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -983,11 +984,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - downstairs 2 text
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
-  OptionIds: 0300000001000000
+  - Check the door.
+  - Head to the kitchen.
+  OptionIds: 0600000005000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -1184,11 +1185,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - downstairs 3 text
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
-  OptionIds: 0300000001000000
+  - fight 2 door
+  OptionIds: 0a000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -1336,7 +1336,7 @@ MonoBehaviour:
     - '[menu:12]'
   OptionTexts:
   - h
-  OptionIds: 0300000001000000
+  OptionIds: 00000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -1387,11 +1387,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - light 3 text
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
-  OptionIds: 0300000001000000
+  - time wasted
+  OptionIds: 19000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -1579,6 +1578,328 @@ MonoBehaviour:
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
   SpecialProcessID: -1
+--- !u!1 &530098726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 530098729}
+  - component: {fileID: 530098728}
+  - component: {fileID: 530098727}
+  m_Layer: 5
+  m_Name: gamestate indicator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &530098727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530098726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_text: 0
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: e6b9396f433047847bfa71f35c314537, type: 2}
+  m_sharedMaterial: {fileID: 21220177106425194, guid: e6b9396f433047847bfa71f35c314537,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278255360
+  m_fontColor: {r: 0, g: 1, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 2
+  m_fontColorGradient:
+    topLeft: {r: 0, g: 0, b: 0, a: 1}
+    topRight: {r: 0, g: 0, b: 0, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_outlineColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontSize: 72
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_textAlignment: 257
+  m_isAlignmentEnumConverted: 1
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
+  m_linkedTextComponent: {fileID: 0}
+  m_isLinkedTextComponent: 0
+  m_isTextTruncated: 0
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_ignoreRectMaskCulling: 0
+  m_ignoreCulling: 1
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_firstVisibleCharacter: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_textInfo:
+    textComponent: {fileID: 530098727}
+    characterCount: 1
+    spriteCount: 0
+    spaceCount: 0
+    wordCount: 1
+    linkCount: 0
+    lineCount: 1
+    pageCount: 1
+    materialCount: 1
+  m_havePropertiesChanged: 0
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_isInputParsingRequired: 0
+  m_inputSource: 0
+  m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &530098728
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530098726}
+  m_CullTransparentMesh: 0
+--- !u!224 &530098729
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530098726}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1460650773}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.1, y: 0.9}
+  m_AnchorMax: {x: 0.2, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &556895664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 556895667}
+  - component: {fileID: 556895666}
+  - component: {fileID: 556895665}
+  m_Layer: 5
+  m_Name: debug indicator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &556895665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556895664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_text: D
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: e6b9396f433047847bfa71f35c314537, type: 2}
+  m_sharedMaterial: {fileID: 21220177106425194, guid: e6b9396f433047847bfa71f35c314537,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278255360
+  m_fontColor: {r: 0, g: 1, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 2
+  m_fontColorGradient:
+    topLeft: {r: 0, g: 0, b: 0, a: 1}
+    topRight: {r: 0, g: 0, b: 0, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_outlineColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontSize: 72
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_textAlignment: 257
+  m_isAlignmentEnumConverted: 1
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
+  m_linkedTextComponent: {fileID: 0}
+  m_isLinkedTextComponent: 0
+  m_isTextTruncated: 0
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_ignoreRectMaskCulling: 0
+  m_ignoreCulling: 1
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_firstVisibleCharacter: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_textInfo:
+    textComponent: {fileID: 556895665}
+    characterCount: 1
+    spriteCount: 0
+    spaceCount: 0
+    wordCount: 1
+    linkCount: 0
+    lineCount: 1
+    pageCount: 1
+    materialCount: 1
+  m_havePropertiesChanged: 0
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_isInputParsingRequired: 0
+  m_inputSource: 0
+  m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &556895666
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556895664}
+  m_CullTransparentMesh: 0
+--- !u!224 &556895667
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556895664}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1460650773}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.9}
+  m_AnchorMax: {x: 0.1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &616217661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1624,6 +1945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
+    - door fight text
     - '[menu:5]'
   OptionTexts:
   - h
@@ -1633,6 +1955,65 @@ MonoBehaviour:
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
   SpecialProcessID: -1
+--- !u!1 &656377536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 656377538}
+  - component: {fileID: 656377537}
+  m_Layer: 0
+  m_Name: EndingTracker
+  m_TagString: EndingTracker
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &656377537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656377536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8b9048cf3364b245ad62643f58cf51a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endings: 0000000000000000000000000000
+  toggles:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!4 &656377538
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656377536}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &680957893
 GameObject:
   m_ObjectHideFlags: 0
@@ -1678,10 +2059,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
+    - knife 3 text
     - '[menu:6]'
   OptionTexts:
   - h
-  OptionIds: 0300000001000000
+  OptionIds: 00000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -1735,7 +2117,7 @@ MonoBehaviour:
     - '[menu:7]'
   OptionTexts:
   - h
-  OptionIds: 0300000001000000
+  OptionIds: 00000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -1841,11 +2223,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - window 2 text
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
-  OptionIds: 0300000001000000
+  - Back away from the door.
+  - Open the door.
+  OptionIds: 0900000008000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -1951,11 +2333,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - back away (break) text
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
-  OptionIds: 0300000001000000
+  - fight 2 door
+  OptionIds: 0a000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -2061,11 +2442,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - clock 2 text
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
-  OptionIds: 0300000001000000
+  - awake 2
+  OptionIds: 1d000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -2116,11 +2496,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - chair text
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
-  OptionIds: 0300000001000000
+  - fight 2 kitchen (spare time)
+  OptionIds: 0d000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -2332,11 +2711,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - sleep 2 text
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
-  OptionIds: 0300000001000000
+  - Ignore it.
+  - Get up.
+  OptionIds: 1b00000016000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -2663,11 +3042,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - door 2 text
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
-  OptionIds: 0300000001000000
+  - Go to the kitchen.
+  - Check the window.
+  - Open the door.
+  OptionIds: 050000000700000008000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -2718,11 +3098,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - window 3 text
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
-  OptionIds: 0300000001000000
+  - Look elsewhere.
+  - Break the window.
+  OptionIds: 1900000015000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -2776,7 +3156,7 @@ MonoBehaviour:
     - '[menu:8]'
   OptionTexts:
   - h
-  OptionIds: 0300000001000000
+  OptionIds: 00000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -2829,9 +3209,10 @@ MonoBehaviour:
     sentences:
     - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
-  OptionIds: 0300000001000000
+  - Head downstairs.
+  - Turn on the lights.
+  - Check the clock.
+  OptionIds: 120000001f0000001e000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -2882,11 +3263,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - light 2 text
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
-  OptionIds: 0300000001000000
+  - awake 2
+  OptionIds: 1d000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -2937,11 +3317,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - awake 3 text
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
-  OptionIds: 0300000001000000
+  - Head downstairs.
+  - Check the window.
+  - Turn on the lights.
+  - Check the clock.
+  OptionIds: 13000000140000001800000017000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -2992,10 +3374,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
+    - open door 3 text
     - '[menu:3]'
   OptionTexts:
   - h
-  OptionIds: 0300000001000000
+  OptionIds: 00000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -3083,6 +3466,121 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1460650768
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1460650773}
+  - component: {fileID: 1460650772}
+  - component: {fileID: 1460650771}
+  - component: {fileID: 1460650770}
+  - component: {fileID: 1460650769}
+  m_Layer: 5
+  m_Name: DebugMode
+  m_TagString: Debug
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1460650769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460650768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca493c88a34e24e43bbd3d6664848565, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debugIndicator: {fileID: 556895664}
+  gameStateIndicator: {fileID: 530098727}
+--- !u!114 &1460650770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460650768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1460650771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460650768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &1460650772
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460650768}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: 0
+  m_SortingOrder: 1
+  m_TargetDisplay: 0
+--- !u!224 &1460650773
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460650768}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 556895667}
+  - {fileID: 530098729}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &1483199658
 GameObject:
   m_ObjectHideFlags: 0
@@ -3128,10 +3626,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - knife 2 (break)
+    - knife 2 (break) text
   OptionTexts:
-  - fight
-  - get out
+  - Rush them.
+  - Run for the back door.
   OptionIds: 0100000002000000
   BgAnimID: 0
   BgmID: -1
@@ -3183,6 +3681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
+    - back door 3 text
     - '[menu:10]'
   OptionTexts:
   - h
@@ -3241,7 +3740,7 @@ MonoBehaviour:
   OptionTexts:
   - Go back to bed.
   - Stand up.
-  OptionIds: 0300000001000000
+  OptionIds: 1c00000020000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -3402,11 +3901,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - fight 2 door text
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
-  OptionIds: 0300000001000000
+  - Throw something in the way!
+  - Run away!
+  OptionIds: 0b0000000c000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -3457,11 +3956,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - awake 1 text
   OptionTexts:
-  - Go back to bed.
-  - Stand up.
-  OptionIds: 0300000001000000
+  - Head downstairs.
+  - Turn on the lights.
+  - Check the clock.
+  OptionIds: 230000002200000021000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -3512,10 +4012,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
+    - back door 4 spare time text
     - '[menu:11]'
   OptionTexts:
   - h
-  OptionIds: 0300000001000000
+  OptionIds: 00000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -3711,10 +4212,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
+    - back door 4 no spare time text
     - '[menu:2]'
   OptionTexts:
   - h
-  OptionIds: 0300000001000000
+  OptionIds: 00000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -3839,10 +4341,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
+    - window break text
     - '[menu:13]'
   OptionTexts:
   - h
-  OptionIds: 0300000001000000
+  OptionIds: 00000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -3893,10 +4396,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
+    - sleep 3 text
     - '[menu:0]'
   OptionTexts:
   - h
-  OptionIds: 0300000001000000
+  OptionIds: 00000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1
@@ -4067,10 +4571,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - kitchen 2 text
   OptionTexts:
-  - back door
-  - door fight
+  - Head out the back door.
+  - Take the knife.
   OptionIds: 0400000001000000
   BgAnimID: 0
   BgmID: -1
