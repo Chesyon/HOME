@@ -70,13 +70,3 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
-
-# Added by Chesyon. I used this project for other unrelated things and don't want them here lol
-/Assets/Asteroids/
-/Assets/Theatre/
-/Assets/channels/
-/Assets/RPS/
-/Assets/Asteroids.meta
-/Assets/Theatre.meta
-/Assets/channels.meta
-/Assets/RPS.meta
