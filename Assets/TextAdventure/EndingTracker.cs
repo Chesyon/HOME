@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System;
 using UnityEngine.UI;
-using UnityEditor;
+
 public class EndingTracker : MonoBehaviour
 {
     public bool[] endings;
@@ -77,16 +77,5 @@ public class EndingTracker : MonoBehaviour
             endings[i] = toggles[i].isOn;
         }
         SaveEndings();
-    }
-}
-
-[CustomEditor(typeof(EndingTracker))]
-class EndingTrackerEditor : Editor
-{
-    public override void OnInspectorGUI()
-    {
-        base.OnInspectorGUI();
-        if (GUILayout.Button("Force save")) GameObject.Find("EndingTracker").GetComponent<EndingTracker>().SaveEndings();
-        if (GUILayout.Button("Force load")) GameObject.Find("EndingTracker").GetComponent<EndingTracker>().LoadEndings();
     }
 }
