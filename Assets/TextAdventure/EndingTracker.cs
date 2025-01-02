@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System;
 using UnityEngine.UI;
+#if (UNITY_EDITOR) // we don't need UnityEditor outside of editor mode, so we check for UNITY_EDITOR
+using UnityEditor;
+#endif
 
 public class EndingTracker : MonoBehaviour
 {
@@ -59,23 +62,17 @@ public class EndingTracker : MonoBehaviour
         for (int i = 0; i < endings.Length; i++) endings[i] = false;
         SaveEndings();
     }
+}
 
-    // TESTING
-    public Toggle[] toggles;
-    public void EndingsToButtons()
+#if (UNITY_EDITOR) // this prevents the code from compiling in builds, because unity REALLY doesn't like editor stuff in builds
+[CustomEditor(typeof(EndingTracker))]
+class EndingTrackerEditor : Editor
+{
+    public override void OnInspectorGUI()
     {
-        LoadEndings();
-        for (int i = 0; i < toggles.Length; i++)
-        {
-            toggles[i].isOn = endings[i];
-        }
-    }
-    public void ButtonsToEndings()
-    {
-        for (int i = 0; i < toggles.Length; i++)
-        {
-            endings[i] = toggles[i].isOn;
-        }
-        SaveEndings();
+        base.OnInspectorGUI();
+        if (GUILayout.Button("Force save")) GameObject.Find("EndingTracker").GetComponent<EndingTracker>().SaveEndings();
+        if (GUILayout.Button("Force load")) GameObject.Find("EndingTracker").GetComponent<EndingTracker>().LoadEndings();
     }
 }
+#endif

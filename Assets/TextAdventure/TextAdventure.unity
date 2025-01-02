@@ -1889,7 +1889,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - door fight text
+    - You dart towards the intruder, keeping the knife by your hips.
+    - '[ground:0]As you approach, they come into view.'
+    - They lunge...!
+    - You swing the knife, plunging it directly into them.
+    - Their eyes widen...
+    - Before they drop dead.
+    - You've survived.
     - '[menu:5]'
   OptionTexts:
   - h
@@ -1929,21 +1935,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endings: 0000000000000000000000000000
-  toggles:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &656377538
 Transform:
   m_ObjectHideFlags: 0
@@ -2507,7 +2498,11 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: beejnrgrgrgjn
+  m_text: test test test test test test test test test test test test test test test
+    test test test test test test test test test test test test test test test test
+    test test test test test test test test test test test test test test test test
+    test test test test test test test test test test test test test test test test
+    test test test test test test test test test
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e6b9396f433047847bfa71f35c314537, type: 2}
   m_sharedMaterial: {fileID: 21220177106425194, guid: e6b9396f433047847bfa71f35c314537,
@@ -2577,12 +2572,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 988627259}
-    characterCount: 13
+    characterCount: 359
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
+    spaceCount: 71
+    wordCount: 72
     linkCount: 0
-    lineCount: 1
+    lineCount: 4
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -2722,6 +2717,7 @@ MonoBehaviour:
   DialogueText: {fileID: 988627259}
   NameText: {fileID: 112193343}
   DialogueBox: {fileID: 1068044722}
+  TypeSpeed: 0.02
 --- !u!114 &1068044725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4520,7 +4516,7 @@ MonoBehaviour:
   OptionTexts:
   - Head out the back door.
   - Take the knife.
-  OptionIds: 0400000001000000
+  OptionIds: 0400000003000000
   BgAnimID: 0
   BgmID: -1
   SfxID: -1

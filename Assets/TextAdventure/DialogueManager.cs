@@ -15,11 +15,11 @@ public class DialogueManager : MonoBehaviour
     public Queue<string> sentences = new Queue<string>();
     public Queue<string> names = new Queue<string>();
     string sentence;
-    const float DefaultTypeSpeed = 0.02f;
+    public float TypeSpeed = 0.02f;
     bool typing;
     float TypeDelay()
     {
-        if (typing) return DefaultTypeSpeed;
+        if (typing) return TypeSpeed;
         else return 0f;
     }
     void Update()
@@ -91,7 +91,7 @@ public class DialogueManager : MonoBehaviour
             else
             {
                 DialogueText.text += letter;
-                yield return new WaitForSeconds(TypeDelay());
+                if (typing) yield return new WaitForSeconds(TypeDelay());
             }
         }
         typing = false;

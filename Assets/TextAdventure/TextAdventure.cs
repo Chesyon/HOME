@@ -22,9 +22,9 @@ public class TextAdventure : MonoBehaviour
     public Image face;
     public Animator bgAnimator;
 
-    const char tagSeparator = ':';
-    const char paramSeparator = ',';
-    const string animatorParameter = "bgAnimId";
+    const char TAG_SEPARATOR = ':';
+    const char PARAM_SEPARATOR = ',';
+    const string ANIMATOR_PARAMETER = "bgAnimId";
 
     // for debug mode
     public DebugMode debug;
@@ -66,8 +66,7 @@ public class TextAdventure : MonoBehaviour
         dialogueText.color = currentState.textColor;
         dialogueManager.StartDialogue(currentState.DialogueText);
         SpecialProcess(currentState.SpecialProcessID);
-        bgAnimator.SetInteger(animatorParameter, currentState.BgAnimID);
-        ScaleBackground(frame1Library[currentState.BgAnimID]);
+        UpdateBackground(currentState.BgAnimID);
         if (currentState.SfxID != -1) { sfxSource.Stop(); sfxSource.clip = sfxLibrary[currentState.SfxID]; sfxSource.Play(); }
         if (currentState.BgmID != -1) { bgmSource.Stop(); bgmSource.clip = bgmLibrary[currentState.BgmID]; bgmSource.Play(); }
     }
@@ -116,7 +115,7 @@ public class TextAdventure : MonoBehaviour
     }
     public void UpdateBackground(int id)
     {
-        bgAnimator.SetInteger(animatorParameter, id);
+        bgAnimator.SetInteger(ANIMATOR_PARAMETER, id);
         ScaleBackground(frame1Library[id]);
     }
     public void PlaySfx(int id)
@@ -133,8 +132,8 @@ public class TextAdventure : MonoBehaviour
     }
     public void ExecuteTextTag(string textTag)
     {
-        string instruction = textTag.Split(tagSeparator)[0];
-        string[] parameters = textTag.Split(tagSeparator)[1].Split(paramSeparator);
+        string instruction = textTag.Split(TAG_SEPARATOR)[0];
+        string[] parameters = textTag.Split(TAG_SEPARATOR)[1].Split(PARAM_SEPARATOR);
         switch (instruction)
         {
             case "name":
@@ -148,6 +147,9 @@ public class TextAdventure : MonoBehaviour
                 break;
             case "sfx":
                 PlaySfx(int.Parse(parameters[0]));
+                break;
+            case "ground":
+                UpdateBackground(int.Parse(parameters[0]));
                 break;
             case "menu":
                 GameObject.Find("EndingTracker").GetComponent<EndingTracker>().AddNewEnding(int.Parse(parameters[0]));
