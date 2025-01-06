@@ -16,6 +16,7 @@ public class DialogueManager : MonoBehaviour
     public Queue<string> names = new Queue<string>();
     string sentence;
     public float TypeSpeed = 0.02f;
+    public float NewDialogueWait = 0.5f;
     bool typing;
     float TypeDelay()
     {
@@ -65,7 +66,7 @@ public class DialogueManager : MonoBehaviour
         bool textTagMode = false;
         string currentTextTag = "";
         DialogueText.text = "";
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(NewDialogueWait);
         foreach (char letter in sentence.ToCharArray())
         {
             if(letter.ToString() == "[") // START TEXT TAG MODE

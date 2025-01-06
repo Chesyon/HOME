@@ -299,6 +299,11 @@ MonoBehaviour:
   sfxLibrary:
   - {fileID: 0}
   - {fileID: 8300000, guid: 869712252c079794e996d002f360c76c, type: 3}
+  - {fileID: 8300000, guid: da3724c218729b34fbd96275014dc16b, type: 3}
+  - {fileID: 8300000, guid: 5f054a24517ecd943ba901625bfd8d32, type: 3}
+  - {fileID: 8300000, guid: dd90f6d387005e5488035322ca6032e6, type: 3}
+  - {fileID: 8300000, guid: 5d8fe14f1dfd3d94c9002e7e190ffd74, type: 3}
+  - {fileID: 8300000, guid: afa04651913e85c468ffc64f946a7b19, type: 3}
   bgmLibrary:
   - {fileID: 0}
   - {fileID: 8300000, guid: 3ebce30dbd984bf44a658159d0877999, type: 3}
@@ -708,7 +713,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - time wasted text
+    - You look towards the door.
+    - '[sfx:4]SLAM!'
+    - '[ground:1]They lunge at you.'
+    - '[face:7]There''s nothing you can do to stop them.'
     - '[menu:1]'
   OptionTexts:
   - h
@@ -763,7 +771,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - back door 2 text
+    - '[face:0]Ignoring the source of the knocking, you head for the back door.'
+    - '[sfx:4]You open the door, stepping outside.'
+    - '[sfx:2]You close the door behind you.'
+    - '...'
+    - You're safe.
     - '[menu:9]'
   OptionTexts:
   - h
@@ -1276,7 +1288,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - back door 5 text
+    - You'd best not risk it... You head to the back door.
+    - '[sfx:4]You open the door, and step outside.'
+    - '[sfx:2]You turn around and close the door behind you.'
+    - '...Nothing happens.'
+    - '[face:3]You''re safe.'
     - '[menu:12]'
   OptionTexts:
   - h
@@ -1889,8 +1905,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - You dart towards the intruder, keeping the knife by your hips.
-    - '[ground:0]As you approach, they come into view.'
+    - '[face:2]You dart towards the intruder, keeping the knife by your hips.'
+    - '[ground:1]As you approach, they come into view.'
     - They lunge...!
     - You swing the knife, plunging it directly into them.
     - Their eyes widen...
@@ -2049,7 +2065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - open door 1 text
+    - '[sfx:4]open door 1 text'
     - '[menu:7]'
   OptionTexts:
   - h
@@ -2158,7 +2174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - window 2 text
+    - '[ground:1]They''re at the door. Knocking.'
   OptionTexts:
   - Back away from the door.
   - Open the door.
@@ -2323,7 +2339,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - kitchen 1 text
+    - You enter the kitchen.
+    - There's a back door, and there's a knife on the counter.
   OptionTexts:
   - Head out the back door.
   - Take the knife.
@@ -2718,6 +2735,7 @@ MonoBehaviour:
   NameText: {fileID: 112193343}
   DialogueBox: {fileID: 1068044722}
   TypeSpeed: 0.02
+  NewDialogueWait: 0
 --- !u!114 &1068044725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2983,7 +3001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - door 2 text
+    - You head to the front door.
   OptionTexts:
   - Go to the kitchen.
   - Check the window.
@@ -3039,7 +3057,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - window 3 text
+    - You look out the window. It's still dark out.
+    - There's a bush on the ground below.
   OptionTexts:
   - Look elsewhere.
   - Break the window.
@@ -3094,7 +3113,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - back door text
+    - '[sfx:4]You open the door, stepping outside.'
+    - '[menu:8]'
+    - '[menu:8]'
     - '[menu:8]'
   OptionTexts:
   - h
@@ -3316,7 +3337,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - open door 3 text
+    - '[ground:0][sfx:4]You open the door.'
+    - '[face:4][ground:1]They immediately lunge at you.'
+    - '[face:7]You don''t stand a chance.'
     - '[menu:3]'
   OptionTexts:
   - h
@@ -3568,9 +3591,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - knife 2 (break) text
+    - '[face:0]You hesitantly reach for the knife on the counter, holding the handle
+      tight.'
+    - You look towards the source of the knocking.
+    - '...'
+    - '[face:4][sfx:1]CRASH!'
+    - The window is broken. They're inside.
   OptionTexts:
-  - Rush them.
+  - Rush Them.
   - Run for the back door.
   OptionIds: 0100000002000000
   BgAnimID: 0
@@ -3623,7 +3651,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - back door 3 text
+    - You turn away from the sound, and run.
+    - You throw the back door open, and dart out through it.
+    - '[sfx:3]You slam the door behind you, and back away.'
+    - '[face:0]...'
+    - Nothing happens.
+    - '[face:3]You''re safe.'
     - '[menu:10]'
   OptionTexts:
   - h
@@ -3733,7 +3766,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - approach + open door 2 text
+    - '[sfx:4]approach + open door 2 text'
     - '[menu:4]'
   OptionTexts:
   - h
@@ -3788,7 +3821,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - knife text
+    - You're not sure why, but... you take the knife from the counter.
+    - You hold it at your side.
   OptionTexts:
   - knocking
   OptionIds: 2a000000
@@ -3953,7 +3987,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - back door 4 spare time text
+    - '[sfx:3]back door 4 spare time text'
     - '[menu:11]'
   OptionTexts:
   - h
@@ -4282,7 +4316,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - window break text
+    - You run towards the window.
+    - '[sfx:6]You jump.'
+    - '...'
+    - '[sfx:5][face:7]You hit the ground with a thud.'
+    - '...'
+    - '[face:3]You''ve survived.'
     - '[menu:13]'
   OptionTexts:
   - h
@@ -4512,7 +4551,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - kitchen 2 text
+    - You head to the kitchen.
+    - '[face:3]The knocking isn''t stopping.'
+    - There's a knife on the counter, and there's a back door.
   OptionTexts:
   - Head out the back door.
   - Take the knife.
@@ -4567,13 +4608,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - knocking text
+    - Someone starts knocking at the front door.
   OptionTexts:
   - Head to the front door.
   - Go out the back door.
   OptionIds: 2c0000002b000000
   BgAnimID: 0
-  BgmID: -1
+  BgmID: 1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
   SpecialProcessID: -1

@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System;
-using UnityEngine.UI;
 #if (UNITY_EDITOR) // we don't need UnityEditor outside of editor mode, so we check for UNITY_EDITOR
 using UnityEditor;
 #endif
