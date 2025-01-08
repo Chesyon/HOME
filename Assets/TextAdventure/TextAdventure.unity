@@ -157,7 +157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - fight 2 kitchen (spare time) text
+    - There's a back door not far away, and there's a knife on the counter!
   OptionTexts:
   - Run for the door!
   - Grab the knife!
@@ -212,7 +212,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - flee text
+    - You immediately turn around and RUN as fast as you can!
+    - You make your way to the kitchen, but you know they're not far behind..!
   OptionTexts:
   - fight 2 kitchen (no spare time)
   OptionIds: 0e000000
@@ -389,10 +390,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - sleep 1 text
+    - '[face:3]...Not yet. You close your eyes, trying to fall back asleep.'
+    - '...'
+    - '[bgm:1]There''s a knocking at the door.'
   OptionTexts:
   - Ignore it.
-  - Get up
+  - Get up.
   OptionIds: 1a0000001d000000
   BgAnimID: 0
   BgmID: -1
@@ -659,7 +662,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - You check the clock... 10:32. Why is it still dark out?
+    - '[face:0]You check the clock... 10:32. Why is it still dark out?'
   OptionTexts:
   - awake 1
   OptionIds: 20000000
@@ -830,7 +833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - should be same as text in 13
+    - There's a back door not far away, and there's a knife on the counter!
   OptionTexts:
   - Run for the door!
   - Grab the knife!
@@ -885,7 +888,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - You try to turn on the lights... nothing happens.
+    - '[face:0]You try to turn on the lights... nothing happens.'
   OptionTexts:
   - awake 1
   OptionIds: 20000000
@@ -939,7 +942,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - downstairs 2 text
+    - '[face:2]You walk down the stairs, irritated by the knocking.'
+    - They're still going...
   OptionTexts:
   - Check the door.
   - Head to the kitchen.
@@ -1140,7 +1144,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - downstairs 3 text
+    - You run downstairs, barely stopping yourself from tripping...
+    - '[ground:1]They''re right there.'
   OptionTexts:
   - fight 2 door
   OptionIds: 0a000000
@@ -2010,7 +2015,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - knife 3 text
+    - '[sfx:5][face:7]They slam into you!'
+    - '[face:4]As you trip, you manage to grab the knife from the counter!'
+    - Knocked to the ground, They prepare to lunge at you.
+    - They lunge, and..!
+    - You swing the knife at them!
+    - '[face:0]Their eyes widen...'
+    - Before they drop dead.
+    - '[face:3]You''ve survived.'
     - '[menu:6]'
   OptionTexts:
   - h
@@ -2065,7 +2077,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[sfx:4]open door 1 text'
+    - '[sfx:4]You open the front door, stepping outside.'
+    - It's dark out, but...
+    - You're fine.
+    - '[face:3]Everything''s fine.'
     - '[menu:7]'
   OptionTexts:
   - h
@@ -2120,7 +2135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - look out window text
+    - It's dark outside... But there's nothing else of interest to see.
   OptionTexts:
   - door 1
   OptionIds: 24000000
@@ -2174,7 +2189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[ground:1]They''re at the door. Knocking.'
+    - '[ground:1][face:0]They''re at the door. Knocking.'
   OptionTexts:
   - Back away from the door.
   - Open the door.
@@ -2229,7 +2244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - door 1 text
+    - You look at the front door... It looks about the same as usual.
   OptionTexts:
   - Look out the window.
   - Open the door.
@@ -2285,7 +2300,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - back away (break) text
+    - You slowly step away from Them...
+    - '...'
+    - '[sfx:1][face:4]CRASH!'
   OptionTexts:
   - fight 2 door
   OptionIds: 0a000000
@@ -2449,7 +2466,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - chair text
+    - You dart away, grabbing the nearest chair, and throw it in Their way!
+    - They recoil in pain, as you run into the kitchen.
   OptionTexts:
   - fight 2 kitchen (spare time)
   OptionIds: 0d000000
@@ -2668,7 +2686,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - sleep 2 text
+    - '[face:3]You ignore the knocking. Whoever it is can wait.'
+    - '...'
+    - '[sfx:1][face:4]CRASH!'
   OptionTexts:
   - Ignore it.
   - Get up.
@@ -2818,10 +2838,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - downstairs 1 text
+    - '[face:0]You come downstairs... It''s still dark down here as well.'
   OptionTexts:
   - Check the door.
-  - Stand up.
+  - Head to the kitchen.
   OptionIds: 2400000028000000
   BgAnimID: 0
   BgmID: -1
@@ -3114,8 +3134,8 @@ MonoBehaviour:
   DialogueText:
     sentences:
     - '[sfx:4]You open the door, stepping outside.'
-    - '[menu:8]'
-    - '[menu:8]'
+    - '...'
+    - '[face:3]You''re fine. Everything''s fine.'
     - '[menu:8]'
   OptionTexts:
   - h
@@ -3170,7 +3190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[name:Narrator][face:2]You wake up. It''s a Thursday.'
+    - '[name:Narrator][face:2]Now standing, you look around the room.'
   OptionTexts:
   - Head downstairs.
   - Turn on the lights.
@@ -3280,7 +3300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - awake 3 text
+    - You stand up frantically. What was that?!
   OptionTexts:
   - Head downstairs.
   - Check the window.
@@ -3766,7 +3786,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[sfx:4]approach + open door 2 text'
+    - You approach the door, keeping the knife in your hand...
+    - '[sfx:4][bgm:0]You open the door...'
+    - '[face:2][ground:1]And immediately swing the knife, before They have a chance
+      to react.'
+    - Their eyes widen...
+    - And they drop dead.
+    - '[face:3]You''ve survived...'
+    - '[face:6]And it feels good.'
     - '[menu:4]'
   OptionTexts:
   - h
@@ -3876,12 +3903,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - fight 2 door text
+    - They bound towards you!
+    - You turn around, and...
   OptionTexts:
   - Throw something in the way!
   - Run away!
   OptionIds: 0b0000000c000000
-  BgAnimID: 0
+  BgAnimID: 1
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -3931,7 +3959,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - awake 1 text
+    - Now reluctantly standing, you look around the room.
   OptionTexts:
   - Head downstairs.
   - Turn on the lights.
@@ -3987,7 +4015,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - '[sfx:3]back door 4 spare time text'
+    - You keep running as fast as your legs will take you!
+    - You throw the back door open, and dart out through it.
+    - '[sfx:3]You slam the door behind you, and back away.'
+    - '[face:0]...'
+    - Nothing happens.
+    - '[face:3]You''re safe.'
     - '[menu:11]'
   OptionTexts:
   - h
@@ -4187,7 +4220,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - back door 4 no spare time text
+    - You keep running as fast as your legs will take you!
+    - But then, [sfx:5][face:7]They slam into you, knocking you to the ground.
+    - With nothing to protect yourself, there's nothing you can do to stop them...
     - '[menu:2]'
   OptionTexts:
   - h
@@ -4376,7 +4411,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - sleep 3 text
+    - '[face:3]...You close your eyes. This is surely just a bad dream.'
+    - '...'
+    - '[sfx:4]SLAM!'
+    - '[ground:1]Before you can react, they lunge at you.'
+    - '[face:7]It''s too late to do something now... it''s over.'
     - '[menu:0]'
   OptionTexts:
   - h
@@ -4551,7 +4590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueText:
     sentences:
-    - You head to the kitchen.
+    - '[face:0]You head to the kitchen.'
     - '[face:3]The knocking isn''t stopping.'
     - There's a knife on the counter, and there's a back door.
   OptionTexts:
