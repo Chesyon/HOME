@@ -48,6 +48,7 @@ public class TextAdventure : MonoBehaviour
 
     void SpecialProcess(int ID) // Special Processes are used for rare scenarios in code that don't need to be included in the class.
     {
+        // I ended up not needing any for my case, but i can leave it in it's fiiiine
         switch (ID)
         {
             default:
@@ -86,6 +87,8 @@ public class TextAdventure : MonoBehaviour
         float spriteHeight = bgSprite.rect.height;
 
         // this logic took forever to figure out, the conditionals could absolutely be optimized but if it works it works ¯\_(ツ)_/¯
+        // i hate you past chesyon this DOESN'T work
+        // (doesn't scale properly with certain combinations of aspect ratios and image resolutions; more research would be needed if i didn't have a locked aspect ratio and consistent bg resolutions.)
         float scale = 0;
         if (screenWidth >= screenHeight)
         {

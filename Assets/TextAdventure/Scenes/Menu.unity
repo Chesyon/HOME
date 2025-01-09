@@ -1200,7 +1200,7 @@ MonoBehaviour:
   endingDescriptionObject: {fileID: 1802585254}
   endingPictureObject: {fileID: 119440597}
   endingName: Escapist II
-  endingDescription: Did you even know they were there?
+  endingDescription: Did you even know They were there?
   endingPicture: {fileID: 21300000, guid: baa330c3520cbfe40b30becbeee320b2, type: 3}
 --- !u!1 &127901784
 GameObject:
@@ -3521,7 +3521,7 @@ MonoBehaviour:
   endingDescriptionObject: {fileID: 1722297168}
   endingPictureObject: {fileID: 592753624}
   endingName: Hunted IV
-  endingDescription: Not the best idea to let them into the house.
+  endingDescription: Not the best idea to let Them into the house.
   endingPicture: {fileID: 21300000, guid: 54ef4015bef0efd46a4b2d97787aa0db, type: 3}
 --- !u!1 &598518668
 GameObject:
@@ -4740,7 +4740,7 @@ MonoBehaviour:
   endingDescriptionObject: {fileID: 1581913450}
   endingPictureObject: {fileID: 786078879}
   endingName: Escapist V
-  endingDescription: Too close... Why didn't they follow you?
+  endingDescription: Too close... Why didn't They follow you?
   endingPicture: {fileID: 21300000, guid: baa330c3520cbfe40b30becbeee320b2, type: 3}
 --- !u!1 &792144027
 GameObject:
@@ -7282,21 +7282,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endings: 0000000000000000000000000000
-  toggles:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &1287143385
 Transform:
   m_ObjectHideFlags: 0
@@ -8335,7 +8320,7 @@ MonoBehaviour:
   endingDescriptionObject: {fileID: 609304722}
   endingPictureObject: {fileID: 1452177106}
   endingName: Hunter II
-  endingDescription: Take the fight to them.
+  endingDescription: Take the fight to Them.
   endingPicture: {fileID: 21300000, guid: 3f3f65e1718efee4591d5baaf762d6c5, type: 3}
 --- !u!1 &1454307761
 GameObject:
@@ -10376,8 +10361,10 @@ MonoBehaviour:
   m_text: "Writing, art, and programming by Chesyon\n\nKnocking (3).wav by awrecording.it
     -- https://freesound.org/s/501703/ -- License: Attribution 4.0\r\n\nGlass Break
     pacts Mix 18.mp3 by PNMCarrieRailfan -- https://freesound.org/s/682050/ -- License:
-    Attribution NonCommercial 4.0\n\n - No AI generated assets were used in this project.
-    :) -"
+    Attribution NonCommercial 4.0\n\nDoor Slam.MP3 by FunWithSound -- https://freesound.org/s/361167/
+    -- License: Attribution 4.0\r\n\nDropping Body on Hard Ground.wav by jjhouse4
+    -- https://freesound.org/s/203039/ -- License: Attribution 4.0\n\n - No AI generated
+    assets were used in this project. :) -"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e6b9396f433047847bfa71f35c314537, type: 2}
   m_sharedMaterial: {fileID: 21220177106425194, guid: e6b9396f433047847bfa71f35c314537,

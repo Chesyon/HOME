@@ -50,6 +50,7 @@ public class EndingTracker : MonoBehaviour
         PlayerPrefs.SetInt("endings", endingPrefs);
     }
 
+    // TODO: have some kinda flag that carries between scenes. should be -1 if no new ending was unlocked, and the ending ID if one was. want this for the new ending popup on the menu
     public void AddNewEnding(int endingNum)
     {
         endings[endingNum] = true;

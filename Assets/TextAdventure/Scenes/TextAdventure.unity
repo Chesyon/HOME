@@ -311,6 +311,9 @@ MonoBehaviour:
   frame1Library:
   - {fileID: 21300000, guid: bc4b03dfd5c68f84f80f22d02bfe4632, type: 3}
   - {fileID: 21300000, guid: 95cae98a076a75d4c8d5709eee53ce8d, type: 3}
+  - {fileID: 21300000, guid: 5f564585d1077f745a222324d888289c, type: 3}
+  - {fileID: 21300000, guid: cae6013f63a1ecc48ad701b5cc56a851, type: 3}
+  - {fileID: 21300000, guid: ed66f67e32a1d9141bd28d7c323c40c7, type: 3}
   faceLibrary:
   - {fileID: 21300000, guid: ca4eed2ed2bbd5b43bac47a51d8d7a2d, type: 3}
   - {fileID: 21300000, guid: b68a81d66d855f545bfe9647d360488a, type: 3}
@@ -612,7 +615,7 @@ MonoBehaviour:
   OptionTexts:
   - time wasted
   OptionIds: 19000000
-  BgAnimID: 0
+  BgAnimID: 4
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -666,7 +669,7 @@ MonoBehaviour:
   OptionTexts:
   - awake 1
   OptionIds: 20000000
-  BgAnimID: 0
+  BgAnimID: 2
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -2416,7 +2419,7 @@ MonoBehaviour:
   OptionTexts:
   - awake 2
   OptionIds: 1d000000
-  BgAnimID: 0
+  BgAnimID: 3
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
