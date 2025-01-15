@@ -543,7 +543,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -1665,7 +1665,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -1826,7 +1826,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -1962,6 +1962,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endings: 0000000000000000000000000000
+  endingResult: -1
+  newEndingFlag: 0
 --- !u!4 &656377538
 Transform:
   m_ObjectHideFlags: 0
@@ -2307,7 +2309,7 @@ MonoBehaviour:
   DialogueText:
     sentences:
     - You slowly step away from Them...
-    - '...'
+    - '[bgm:0]...'
     - '[sfx:1][face:4]CRASH!'
   OptionTexts:
   - fight 2 door
@@ -2621,7 +2623,7 @@ MonoBehaviour:
     lineCount: 4
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -2693,7 +2695,7 @@ MonoBehaviour:
   DialogueText:
     sentences:
     - '[face:3]You ignore the knocking. Whoever it is can wait.'
-    - '...'
+    - '[bgm:0]...'
     - '[sfx:1][face:4]CRASH!'
   OptionTexts:
   - Ignore it.
@@ -3620,7 +3622,7 @@ MonoBehaviour:
     - '[face:0]You hesitantly reach for the knife on the counter, holding the handle
       tight.'
     - You look towards the source of the knocking.
-    - '...'
+    - '[bgm:0]...'
     - '[face:4][sfx:1]CRASH!'
     - The window is broken. They're inside.
   OptionTexts:
