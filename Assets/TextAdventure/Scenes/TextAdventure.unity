@@ -213,7 +213,8 @@ MonoBehaviour:
   DialogueText:
     sentences:
     - You immediately turn around and RUN as fast as you can!
-    - You make your way to the kitchen, but you know they're not far behind..!
+    - '[ground:12]You make your way to the kitchen, but you know they''re not far
+      behind..!'
   OptionTexts:
   - fight 2 kitchen (no spare time)
   OptionIds: 0e000000
@@ -317,6 +318,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6bd7eeff14ec3fd42a1a09d070352f89, type: 3}
   - {fileID: 21300000, guid: 99aff94829f16354a981bcfb5ece47f1, type: 3}
   - {fileID: 21300000, guid: 6703075dc274ab6488d79688e317c98e, type: 3}
+  - {fileID: 21300000, guid: 5c051d0dc0337ef4abdbd244d66d5a6f, type: 3}
+  - {fileID: 21300000, guid: 6e4e4f27cd37bdc4aa2120514e910620, type: 3}
+  - {fileID: 21300000, guid: 6d96e5a8bd8dad348b74d0a074ff157a, type: 3}
+  - {fileID: 21300000, guid: 76fa532d497de6d43b84d1196b6d43f3, type: 3}
+  - {fileID: 21300000, guid: b98b5504f9dae904ab177c6e2f9eaed9, type: 3}
   faceLibrary:
   - {fileID: 21300000, guid: ca4eed2ed2bbd5b43bac47a51d8d7a2d, type: 3}
   - {fileID: 21300000, guid: b68a81d66d855f545bfe9647d360488a, type: 3}
@@ -543,7 +549,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -730,7 +736,7 @@ MonoBehaviour:
   OptionTexts:
   - h
   OptionIds: 00000000
-  BgAnimID: 0
+  BgAnimID: 10
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -782,7 +788,7 @@ MonoBehaviour:
     sentences:
     - '[face:0]Ignoring the source of the knocking, you head for the back door.'
     - '[sfx:4]You open the door, stepping outside.'
-    - '[sfx:2]You close the door behind you.'
+    - '[sfx:2][ground:0]You close the door behind you.'
     - '...'
     - You're safe.
     - '[menu:9]'
@@ -954,7 +960,7 @@ MonoBehaviour:
   - Check the door.
   - Head to the kitchen.
   OptionIds: 0600000005000000
-  BgAnimID: 0
+  BgAnimID: 11
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -1154,8 +1160,8 @@ MonoBehaviour:
     - '[ground:1]They''re right there.'
   OptionTexts:
   - fight 2 door
-  OptionIds: 0a000000
-  BgAnimID: 0
+  OptionIds: 0b000000
+  BgAnimID: 5
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -1301,14 +1307,14 @@ MonoBehaviour:
     sentences:
     - You'd best not risk it... You head to the back door.
     - '[sfx:4]You open the door, and step outside.'
-    - '[sfx:2]You turn around and close the door behind you.'
+    - '[sfx:2][ground:0]You turn around and close the door behind you.'
     - '...Nothing happens.'
     - '[face:3]You''re safe.'
     - '[menu:12]'
   OptionTexts:
   - h
   OptionIds: 00000000
-  BgAnimID: 0
+  BgAnimID: 12
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -1665,7 +1671,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -1826,7 +1832,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -2035,7 +2041,7 @@ MonoBehaviour:
   OptionTexts:
   - h
   OptionIds: 00000000
-  BgAnimID: 0
+  BgAnimID: 1
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -2258,7 +2264,7 @@ MonoBehaviour:
   - Open the door.
   - Head to the kitchen.
   OptionIds: 260000002500000028000000
-  BgAnimID: 0
+  BgAnimID: 5
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -2370,7 +2376,7 @@ MonoBehaviour:
   - Head out the back door.
   - Take the knife.
   OptionIds: 2700000029000000
-  BgAnimID: 0
+  BgAnimID: 12
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -2475,7 +2481,7 @@ MonoBehaviour:
   DialogueText:
     sentences:
     - You dart away, grabbing the nearest chair, and throw it in Their way!
-    - They recoil in pain, as you run into the kitchen.
+    - '[ground:12]They recoil in pain, as you run into the kitchen.'
   OptionTexts:
   - fight 2 kitchen (spare time)
   OptionIds: 0d000000
@@ -2623,7 +2629,7 @@ MonoBehaviour:
     lineCount: 4
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -2851,7 +2857,7 @@ MonoBehaviour:
   - Check the door.
   - Head to the kitchen.
   OptionIds: 2400000028000000
-  BgAnimID: 0
+  BgAnimID: 11
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -3035,7 +3041,7 @@ MonoBehaviour:
   - Check the window.
   - Open the door.
   OptionIds: 050000000700000008000000
-  BgAnimID: 0
+  BgAnimID: 5
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -3091,7 +3097,7 @@ MonoBehaviour:
   - Look elsewhere.
   - Break the window.
   OptionIds: 1900000015000000
-  BgAnimID: 0
+  BgAnimID: 9
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -3204,7 +3210,7 @@ MonoBehaviour:
   - Turn on the lights.
   - Check the clock.
   OptionIds: 120000001f0000001e000000
-  BgAnimID: 0
+  BgAnimID: 10
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -3315,7 +3321,7 @@ MonoBehaviour:
   - Turn on the lights.
   - Check the clock.
   OptionIds: 13000000140000001800000017000000
-  BgAnimID: 0
+  BgAnimID: 10
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -3621,7 +3627,7 @@ MonoBehaviour:
     sentences:
     - '[face:0]You hesitantly reach for the knife on the counter, holding the handle
       tight.'
-    - You look towards the source of the knocking.
+    - '[ground:12]You look towards the source of the knocking.'
     - '[bgm:0]...'
     - '[face:4][sfx:1]CRASH!'
     - The window is broken. They're inside.
@@ -3681,7 +3687,7 @@ MonoBehaviour:
     sentences:
     - You turn away from the sound, and run.
     - You throw the back door open, and dart out through it.
-    - '[sfx:3]You slam the door behind you, and back away.'
+    - '[sfx:3][ground:0]You slam the door behind you, and back away.'
     - '[face:0]...'
     - Nothing happens.
     - '[face:3]You''re safe.'
@@ -3806,7 +3812,7 @@ MonoBehaviour:
   OptionTexts:
   - h
   OptionIds: 00000000
-  BgAnimID: 0
+  BgAnimID: 5
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -3973,7 +3979,7 @@ MonoBehaviour:
   - Turn on the lights.
   - Check the clock.
   OptionIds: 230000002200000021000000
-  BgAnimID: 0
+  BgAnimID: 10
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -4025,7 +4031,7 @@ MonoBehaviour:
     sentences:
     - You keep running as fast as your legs will take you!
     - You throw the back door open, and dart out through it.
-    - '[sfx:3]You slam the door behind you, and back away.'
+    - '[sfx:3][ground:0]You slam the door behind you, and back away.'
     - '[face:0]...'
     - Nothing happens.
     - '[face:3]You''re safe.'
@@ -4229,7 +4235,7 @@ MonoBehaviour:
   DialogueText:
     sentences:
     - You keep running as fast as your legs will take you!
-    - But then, [sfx:5][face:7]They slam into you, knocking you to the ground.
+    - But then, [sfx:5][face:7][ground:1]They slam into you, knocking you to the ground.
     - With nothing to protect yourself, there's nothing you can do to stop them...
     - '[menu:2]'
   OptionTexts:
@@ -4360,7 +4366,7 @@ MonoBehaviour:
   DialogueText:
     sentences:
     - You run towards the window.
-    - '[sfx:6]You jump.'
+    - '[sfx:6]You jump.[ground:8]'
     - '...'
     - '[sfx:5][face:7]You hit the ground with a thud.'
     - '...'
@@ -4605,7 +4611,7 @@ MonoBehaviour:
   - Head out the back door.
   - Take the knife.
   OptionIds: 0400000003000000
-  BgAnimID: 0
+  BgAnimID: 12
   BgmID: -1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
@@ -4660,7 +4666,7 @@ MonoBehaviour:
   - Head to the front door.
   - Go out the back door.
   OptionIds: 2c0000002b000000
-  BgAnimID: 0
+  BgAnimID: 12
   BgmID: 1
   SfxID: -1
   textColor: {r: 0, g: 0, b: 0, a: 1}
