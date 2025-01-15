@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System;
 #if (UNITY_EDITOR) // we don't need UnityEditor outside of editor mode, so we check for UNITY_EDITOR
 using UnityEditor;
@@ -7,6 +7,8 @@ using UnityEditor;
 public class EndingTracker : MonoBehaviour
 {
     public bool[] endings;
+    public int endingResult = -1;
+    public bool newEndingFlag = false;
     void Awake()
     {
         // i stole this from reflections lol
@@ -50,9 +52,10 @@ public class EndingTracker : MonoBehaviour
         PlayerPrefs.SetInt("endings", endingPrefs);
     }
 
-    // TODO: have some kinda flag that carries between scenes. should be -1 if no new ending was unlocked, and the ending ID if one was. want this for the new ending popup on the menu
     public void AddNewEnding(int endingNum)
     {
+        newEndingFlag = !endings[endingNum]; // if this ending is currently false, we don't have it yet!
+        endingResult = endingNum;
         endings[endingNum] = true;
         SaveEndings();
     }

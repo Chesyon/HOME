@@ -1,7 +1,8 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.Audio;
+using TMPro;
 
 public class MainMenu : MonoBehaviour
 {
@@ -11,6 +12,17 @@ public class MainMenu : MonoBehaviour
     public GameObject EndingTrackerMenu;
     public GameObject ClearProgressConfirmMenu;
     public GameObject CreditsMenu;
+    // new ending popup
+    public GameObject EndingNotification;
+    public GameObject NewEndingNotification;
+    public TextMeshProUGUI PopupDescription;
+    string endingResultDescription;
+    public TextMeshProUGUI PopupName;
+    string endingResultName;
+    public Image PopupImage;
+    Sprite endingResultSprite;
+    public TextMeshProUGUI PopupNumber;
+    int endingResultNumber;
     // ending tracker stuff
     public GameObject endingMenuContent;
     EndingTracker et;
@@ -28,6 +40,13 @@ public class MainMenu : MonoBehaviour
         foreach (Ending ending in endingMenuContent.GetComponentsInChildren<Ending>())
         {
             ending.SetUnlocked(et.endings[i]);
+            if(i == et.endingResult)
+            {
+                endingResultDescription = ending.endingDescription;
+                endingResultName = ending.endingName;
+                endingResultSprite = ending.endingPicture;
+                endingResultNumber = i + 1;
+            }
             i++;
         }
         EndingTrackerMenu.SetActive(false); // no longer needed.
@@ -40,6 +59,17 @@ public class MainMenu : MonoBehaviour
         SettingsMenu.SetActive(false); // no longer needed
         mix.SetFloat("BgmVolume", BgmVolume);
         mix.SetFloat("SfxVolume", SfxVolume);
+
+        // did we just get an ending? if so, display popup!
+        if (et.endingResult != -1) {
+            HomeMenu.SetActive(false);
+            EndingNotification.SetActive(true);
+            NewEndingNotification.SetActive(et.newEndingFlag);
+            PopupDescription.text = endingResultDescription;
+            PopupName.text = endingResultName;
+            PopupImage.sprite = endingResultSprite;
+            PopupNumber.text = $"Ending { endingResultNumber } of { et.endings.Length }";
+        }
     }
 
     public void PlayButton()
@@ -63,6 +93,7 @@ public class MainMenu : MonoBehaviour
     }
     public void MainMenuButton()
     {
+        EndingNotification.SetActive(false);
         SettingsMenu.SetActive(false);
         EndingTrackerMenu.SetActive(false);
         HomeMenu.SetActive(true);
